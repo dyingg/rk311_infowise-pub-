@@ -1,0 +1,180 @@
+
+138.68.184.50
+{"ReverseDNSInspector":{"result":20,"time":7},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+159.89.80.16
+{"ReverseDNSInspector":{"result":20,"time":439},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+78.129.190.103
+{"ReverseDNSInspector":{"result":20,"time":671},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":70,"time":0},"BadASNInspector":{"result":18.51,"time":0},"OrgInspectorBlacklist":{"result":15.457,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"IOMART CLOUD SERVICES LIMITED (No signature found !)","time":0}}
+
+Average Score = 30.75
+
+35.186.177.35
+{"ReverseDNSInspector":{"result":0,"time":447},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":13.13,"time":0},"OrgInspectorBlacklist":{"result":66.6024,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Google LLC (No signature found !)","time":0}}
+
+Average Score = 34.75
+
+142.93.60.18
+{"ReverseDNSInspector":{"result":20,"time":278},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+159.89.48.105
+{"ReverseDNSInspector":{"result":0,"time":157},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":1},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 40
+
+157.245.234.230
+{"ReverseDNSInspector":{"result":20,"time":109},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+159.65.145.104
+{"ReverseDNSInspector":{"result":20,"time":272},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+109.123.74.94
+{"ReverseDNSInspector":{"result":70,"time":867},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":13.44,"time":0},"OrgInspectorBlacklist":{"result":8.36,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"UK-2 Limited (No signature found !)","time":0}}
+
+Average Score = 47.75
+
+142.93.148.209
+{"ReverseDNSInspector":{"result":100,"time":117},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 65
+
+165.22.56.70
+{"ReverseDNSInspector":{"result":20,"time":111},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+54.37.77.158
+{"ReverseDNSInspector":{"result":100,"time":2209},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":10.32,"time":0},"OrgInspectorBlacklist":{"result":83.5188,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"OVH SAS (No signature found !)","time":1}}
+
+Average Score = 63.25
+
+185.203.122.22
+{"ReverseDNSInspector":{"result":20,"time":172},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":9.46,"time":0},"OrgInspectorBlacklist":{"result":32.751000000000005,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Nord VPN","time":0}}
+
+Average Score = 40.25
+
+45.56.197.145
+{"ReverseDNSInspector":{"result":20,"time":152},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":70,"time":0},"BadASNInspector":{"result":30.25,"time":0},"OrgInspectorBlacklist":{"result":1.2000000000000002,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Hosting Services, Inc. (No signature found !)","time":0}}
+
+Average Score = 30.25
+
+167.71.150.42
+{"ReverseDNSInspector":{"result":20,"time":113},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+51.89.148.245
+{"ReverseDNSInspector":{"result":100,"time":2141},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":10.32,"time":0},"OrgInspectorBlacklist":{"result":83.5188,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"OVH SAS (No signature found !)","time":0}}
+
+Average Score = 73.25
+
+142.93.218.169
+{"ReverseDNSInspector":{"result":20,"time":306},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":1}}
+
+Average Score = 45
+
+194.35.233.173
+{"ReverseDNSInspector":{"result":20,"time":1216},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":43.79,"time":0},"OrgInspectorBlacklist":{"result":5.16,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Nord VPN","time":0}}
+
+Average Score = 42
+
+165.22.123.20
+{"ReverseDNSInspector":{"result":20,"time":130},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+165.22.221.108
+{"ReverseDNSInspector":{"result":20,"time":118},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+103.221.233.12
+{"ReverseDNSInspector":{"result":20,"time":1474},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":50,"time":0},"OrgInspectorBlacklist":{"result":8.48,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"HostRoyale Technologies Pvt Ltd (No signature found !)","time":0}}
+
+Average Score = 44.5
+
+78.129.201.10
+{"ReverseDNSInspector":{"result":20,"time":653},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":70,"time":0},"BadASNInspector":{"result":18.51,"time":0},"OrgInspectorBlacklist":{"result":15.457,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"IOMART CLOUD SERVICES LIMITED (No signature found !)","time":0}}
+
+Average Score = 30.75
+
+51.89.139.59
+{"ReverseDNSInspector":{"result":100,"time":1993},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":10.32,"time":0},"OrgInspectorBlacklist":{"result":83.5188,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"OVH SAS (No signature found !)","time":0}}
+
+Average Score = 73.25
+
+134.209.145.6
+{"ReverseDNSInspector":{"result":20,"time":417},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":7.41,"time":0},"OrgInspectorBlacklist":{"result":93.38514,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"DigitalOcean, LLC (No signature found !)","time":0}}
+
+Average Score = 45
+
+101.200.241.199
+{"ReverseDNSInspector":{"result":20,"time":598},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":3.36,"time":0},"OrgInspectorBlacklist":{"result":66.2172,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Hangzhou Alibaba Advertising Co.,Ltd. (No signature found !)","time":0}}
+
+Average Score = 37.25
+
+103.120.168.29
+{"ReverseDNSInspector":{"result":0,"time":968},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":39.64,"time":0},"OrgInspectorBlacklist":{"result":8.36,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"PT. Eka Mas Republik (No signature found !)","time":0}}
+
+Average Score = 26.75
+
+103.209.144.199
+{"ReverseDNSInspector":{"result":70,"time":640},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":70,"time":0},"BadASNInspector":{"result":25,"time":0},"OrgInspectorBlacklist":{"result":0.2,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Micro Hosting Private Limited (No signature found !)","time":0}}
+
+Average Score = 41.25
+
+103.28.52.65
+{"ReverseDNSInspector":{"result":20,"time":1057},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":70,"time":0},"BadASNInspector":{"result":60,"time":0},"OrgInspectorBlacklist":{"result":4.84,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"PT Cloud Hosting Indonesia (No signature found !)","time":0}}
+
+Average Score = 38.5
+
+103.6.196.64
+{"ReverseDNSInspector":{"result":70,"time":829},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":11.29,"time":0},"OrgInspectorBlacklist":{"result":3.2,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Exa Bytes Network Sdn.Bhd. (No signature found !)","time":0}}
+
+Average Score = 36
+
+103.81.85.184
+{"ReverseDNSInspector":{"result":20,"time":264},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":22.65,"time":0},"OrgInspectorBlacklist":{"result":72.1608,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"The Corporation for Financing & Promoting Technology (No signature found !)","time":0}}
+
+Average Score = 43.5
+
+103.81.85.223
+{"ReverseDNSInspector":{"result":20,"time":250},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":22.65,"time":0},"OrgInspectorBlacklist":{"result":72.1608,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"The Corporation for Financing & Promoting Technology (No signature found !)","time":0}}
+
+Average Score = 43.5
+
+103.81.86.217
+{"ReverseDNSInspector":{"result":20,"time":233},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":1},"BadASNInspector":{"result":22.65,"time":0},"OrgInspectorBlacklist":{"result":72.1608,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"The Corporation for Financing & Promoting Technology (No signature found !)","time":0}}
+
+Average Score = 43.5
+
+103.83.36.101
+{"ReverseDNSInspector":{"result":0,"time":2304},"OrgInspectorWhitelist":{"result":0,"time":1},"KeywordInspector":{"result":70,"time":0},"BadASNInspector":{"result":51.22,"time":0},"OrgInspectorBlacklist":{"result":0.2,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Medha Hosting (No signature found !)","time":0}}
+
+Average Score = 30.25
+
+103.86.50.211
+{"ReverseDNSInspector":{"result":0,"time":23169},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":20,"time":0},"OrgInspectorBlacklist":{"result":0.6000000000000001,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"Bangmod Enterprise Co., Ltd. (No signature found !)","time":0}}
+
+Average Score = 20
+
+103.90.224.155
+{"ReverseDNSInspector":{"result":20,"time":944},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":20.54,"time":0},"OrgInspectorBlacklist":{"result":39.229,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"VIETNAM POSTS AND TELECOMMUNICATIONS GROUP (No signature found !)","time":0}}
+
+Average Score = 34.75
+
+103.90.226.219
+{"ReverseDNSInspector":{"result":20,"time":551},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":60,"time":0},"BadASNInspector":{"result":20.54,"time":0},"OrgInspectorBlacklist":{"result":39.229,"time":0},"GoodASNInspector":{"result":0,"time":0},"VPNname":{"result":"VIETNAM POSTS AND TELECOMMUNICATIONS GROUP (No signature found !)","time":0}}
+
+Average Score = 34.75

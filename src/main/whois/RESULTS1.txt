@@ -1,0 +1,5 @@
+
+45.151.157.121
+{"ReverseDNSInspector":{"result":20,"time":1107},"OrgInspectorWhitelist":{"result":0,"time":0},"KeywordInspector":{"result":100,"time":0},"BadASNInspector":{"result":0,"time":0},"OrgInspectorBlacklist":{"result":0.6000000000000001,"time":0},"GoodASNInspector":{"result":-20,"time":0},"VPNname":{"result":"Access2.IT Group B.V. (No signature found !)","time":0}}
+
+Average Score = 25

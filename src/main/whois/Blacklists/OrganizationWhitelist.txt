@@ -1,0 +1,1355 @@
+Reliance Jio Infocomm Limited
+7 Star Digital
+Bharti Airtel Limited
+SPECTRA
+YOU Broadband & Cable India Ltd.
+Atria Convergence Technologies Pvt. Ltd.
+D-Vois Broadband Pvt Ltd
+Syscon Infoway Pvt. Ltd.
+Starone Broadband Private Limited
+Excitel Broadband Private Limited
+Hathway
+Alliance Broadband Services Pvt. Ltd.
+Tikona Infinet Ltd.
+BSNL
+MTNL
+Tata Communications Limited
+Netvigator - Fiber
+HGC - Fiber
+Netvigator - DSL
+HGC - DSL
+HKBN Enterprise Solutions HK Limited
+i-Cable - Fiber
+i-Cable - Cable modem
+Indosat - Fibre
+XL Home
+PT. Cyberindo Aditama
+Linknet-Fastnet ASN
+Neuviz Net
+GlobalXtreme
+Biznet
+MNC Play
+Telkom SA Ltd.
+Partner
+Cellcom Fixed Line Communication L.P.
+Hot
+ Bezeq International-Ltd
+XFone 018 Ltd
+TripleC
+099.net
+au Hikari (KDDI)
+Softbank - Fiber
+ucom digital private limited
+eo Hikari (K-Opticom)
+iTSCOM
+J:COM
+TOKAI Communications Corporation
+OCN (NTT Com)
+Asahi Net
+BIGLOBE Inc.
+IIJ Europe Limited
+KDDI Cable/DSL/Wireless
+NIFTY
+VECTANT
+NTTPC InfoSphere
+Softbank - DSL
+FreeBit Co.,Ltd.
+FASTtelco
+VIVA TELECOM
+Ooredoo Q.S.C.
+Qualitynet AG
+Zajil International Telecom Company W.L.L.
+BOnline
+Time
+Maxis Broadband Sdn Bhd
+Telekom Malaysia Berhad
+Converge ICT Solution
+Globe Telecom
+SKYCable
+PLDT
+ Bayanat Al-Oula For Network Services Limited Co.
+Mobily
+ITC
+STC BAHRAIN B.S.C CLOSED
+Zain Zambia PLC
+ MYREPUBLIC LIMITED
+Singtel Fiber
+M1 LIMITED
+Viewqwest Pte Ltd
+Starhub Internet Pte Ltd
+Singtel DSL
+LG U+
+D LIVE
+KT RWANDA NETWORK Ltd
+SK Broadband Co Ltd
+Taiwan Broadband
+ HiNet Service Center in U.S.A
+CNS KBT
+kbro CO. Ltd.
+So-net Entertainment Corporation
+TFN
+FarEasTone
+Taiwan Mobile
+AIS Fibre
+True Broadband
+3BB
+TOT
+Symphony
+CAT
+AIS WiFi
+CS LoxInfo
+True Internet Data Center Company Limited
+Tüksat Kablo
+TurkNet Iletisim Hizmetleri
+Turkcell Superonline
+Türk Telekom
+D Smart
+Unitymedia KabelBW
+Vodafone Kabel Deutschland GmbH
+NetCologne Gesellschaft fur Telekommunikation mbH
+Versatel Deutschland GmbH
+EWE TEL GmbH
+ M-net Telekommunikations GmbH
+O2 Czech Republic, a.s.
+Virgin Media Limited
+BT
+TalkTalk Fiber
+EE
+ Sky Italia srl
+Plusnet GmbH
+Vodafone
+SFR THD
+ Bouygues Telecom SA
+Free
+SFR SA
+EOLO s.p.a
+Telecom Italia s.p.a
+Fastweb SpA
+Tiscali ITALIA S.P.A
+Linkem spa
+Vodafone Fibra
+Orange Fibra
+Telefonica - Movistar Fibra
+ONO
+Jazztel Fibra
+MASMOVIL Fibra
+Vodafone DSL
+Euskaltel S.A.
+R
+Telefonica - Movistar DSL/Wireless
+Jazztel DSL
+MASMOVIL DSL
+Orange Światlowód
+Inea S.A.
+Vectra S.A.
+Toya sp.z.o.o 
+Multi Media Access
+Netia S.A.
+Orange DSL
+Play
+Plus
+UPCLOUD LTD
+NextGen Networks
+AKTA
+Telekom
+Orange
+Ziggo
+Caiway
+DELTA
+T-Mobile Thuis
+KPN Internedservices B.V.
+Xs4all Internet BV  
+Online
+Telenet
+VOO
+Proximus (Belgacom)
+OTE
+Wind Hellas TELECOMMUNICATIONS SA
+ForthNet
+Cyta Hellas
+Nos Madeira Comunicacoes, S.A.
+NOWO
+MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.
+Com Hem
+Ownit
+Telia
+Bahnhof
+Bredband2
+A3
+Digi
+invitel
+kabelplus
+LIWEST
+CableLink
+Tele2
+A1
+Salt Fiber
+Wingo
+Swisscom
+upc cablecom
+WWZ Telekom
+Sunrise
+ImproWare
+Quickline
+M-Budget
+Netplus
+iWay
+YouSee - Cable
+Waoo (Aura)
+Stofa Bredband
+Dansk Kabel TV
+Waoo (Fibia)
+Stofa - SE FiberBredband
+Waoo (Eniig)
+Hiper
+YouSee - Fiber/DSL
+Parknet F.M.B.A
+TeliaNet
+Telenor
+DNA
+Elisa
+TeliaSonera
+Altibox AS
+Get
+NTE
+Eidsiva Bredband
+NextGenTel AS
+Broadnet
+BT Ireland
+eir
+Digiweb ltd
+Imagine
+Eltrona - Orange
+Tango
+Luxembourg Online S.A.
+Visual Online S.A.
+Post Luxembourg
+Numericable
+Siminn hf
+Hringdu ehf
+Nova
+Simafelagid
+Hringidan ehf / Vortex Inc
+Telstra NBN
+Optus NBN
+Aussie Broadband
+Telstra Non-NBN
+iiNet NBN
+TPG NBN
+Exetel Pty Ltd
+Dodo/iPrimus
+MyRepublic NBN
+Optus Non-NBN
+iiNet Non-NBN
+TPG Non-NBN
+MyRepublic Non-NBN
+Spark - Fiber
+MyRepublic - Fiber
+Trustpower Ltd
+Orcon & Slingshot - Fibre
+Vodafone NZ
+Spark - DSL
+2degrees
+Orcon & Slingshot - DSL
+MyRepublic - DSL
+Totalplay
+Axtel, S.A.B. de C.V.
+Telmex Infinitum
+izzi
+Megacable Comunicaciones de Mexico, S.A. de C.V.
+Cablemás
+Telecable Central, S.A.
+Telmex DSL
+Verizon - FiOS
+Cox Enterprises Inc
+Spectrum Networks Pty. Ltd.
+Comcast Cable Communications, LLC
+Optimum WiFi
+AT&T - U-verse
+Mediacom Communications Corp
+Suddenlink Communications
+Verizon - DSL
+Frontier Communications of America, Inc.
+Windstream Communications LLC
+CenturyLink Communications, LLC
+AT&T - DSL
+Telus - Fiber Optic
+Bell Canada - Fiber Optica
+Videotron Telecom Ltee
+Rogers Communications Canada Inc.
+Shaw Communications Inc.
+Eastlink - High Speed
+Telus - DSL
+Cogeco
+Bell Canada - DSL
+SaskTel - Fiber Optic
+Bell Aliant - Fiber Optic
+MTS - Fiber Optic
+DISTRIBUTEL COMMUNICATIONS LTD.
+TekSavvy Solutions, Inc.
+SaskTel - DSL
+MTS - DSL
+Eastlink - DSL
+Bell Aliant - DSL
+Xplornet
+FLOW
+Cablecolor Internet Plus
+COMPAÃƒâ€˜IA DE TELEVISION VIA SATELITE, S.A. (TEVISAT S.A.)
+Hondutel
+ASINetwork
+Reytel
+Cable Onda
+Cable & Wireless Master
+Cable & Wireless
+ALTICE DOMINICANA S.A.
+Claro Internet
+WIND
+Digicel Play
+Massy Communications Ltd
+Blink d.o.o.
+TURBONETT TELECOMUNICACOES LTDA. - ME
+Telecentro S.A.
+Cablevisión - Fibertel
+TeleRed
+Telecom - Arnet
+AXS Bolivia S. A.
+COTAS LTDA.
+Comteco Ltda
+Vivo Fibra
+Claro Fibra
+Oi Fibra
+Algar Fibra
+Claro NET Vírtua
+TIM Live Ultrafibra
+TIM Live Ultra
+Algar Cable/DSL
+Vivo Internet
+Hoi Internet AG
+GTD Fiber
+Entel Fibra
+Movistar Fibra
+VTR BANDA ANCHA S.A.
+GTD DSL
+Mundo Pacifico
+CLARO S.A.
+Claro S/A
+Movistar DSL
+ENTEL PERU S.A.
+ENTEL CHILE S.A.
+Tigo Senegal
+ETB - Colombia
+TelefÃƒÂ³nica MÃƒÂ³viles Argentina S.A. (Movistar Argentina)
+Emcali
+DIRECTV COLOMBIA LTDA.
+CNT FIBRAS LTDA
+Netlife
+PuntoNet Celerity
+TVCable
+ETAPA Fibra Optica
+PUNTONET S.A.
+ETAPA EP 
+Personal Paraguay
+Tigo Star
+ Copaco Cloud B.V.
+Antel
+MEGANET PROVEDOR
+inter
+Aba
+Afghan Cyber ISP/ICT
+AfSat
+Ariana Network Services
+CeReTechs
+Giganet
+Insta
+IO Global Services (P) Limited
+LiwalNet
+Neda
+Northtelecom-af
+PACTEC International
+Rana Technologies
+Unique Atlantic Telecommunication
+Abissnet
+AdaNet
+Albania Online
+AMC
+Cerist
+Djezzy GSM
+DZsol
+Gecos
+ISC
+Andorra Telecom: Inici
+ACS
+ITA - Internet Technologies Angola
+Movicel
+Multitel
+NetOne
+TSOLNETWORKS
+TV-Cabo
+Arminco
+AzQTel
+Caspian Telecom
+Inet Batelco
+AccessTEL
+Agni Systems Limited
+Bangladesh Tand T Board
+Banglalion
+BDCOM
+Bijoy Online Limited.
+Infolink
+PraDeshta
+Qubee
+Anitex
+Beltelecom
+life
+Network Systems
+Open Contact
+Belgacom (ISP)
+BELNET
+Clearwire
+Planet Internet
+Telenet (Belgium)
+Belize
+Speednet
+Alink Telecom
+BENIN TELECOMS
+FIRSTNET
+HPC
+ISOCEL TELECOM
+OTELECOM
+PHARAON TELECOM
+SOBIEX
+Bhutan Telecom Ltd
+Druknet
+AXS Bolivia
+BoliviaTel
+Comteco
+Cotas
+Cotel
+Entel Bolivia
+BH Telecom
+BHB CABLE TV
+ELTA-KABEL
+EuroproNet
+HT Mostar
+M&H Company
+Telemach
+Botsnet
+BTC
+Ibis
+Mega Internet
+Algar Telecom
+Claro Americas
+Click21 (Embratel)
+Embratel
+Global Village Telecom
+Intelig Telecom
+Internet Group
+Net (telecommunications)
+Oi (telecommunications)
+Plano Nacional de Banda Larga
+Sercomtel
+Star One (Embratel)
+Telefônica Vivo
+TIM Brasil
+Universo Online
+Vivo (telecommunications
+BTC-Net
+Digital Systems
+Euro Integra
+MobilTel
+Networx-BG
+Orbitel (Bulgarian company)
+Telekabel
+CENATRIN
+IPSYS
+ONATEL
+RIVER TELECOM
+CBINET
+USAN
+Camnet Internet Service
+Chuan Wei
+CAMTEL
+CREOLINK
+EQUACOMM
+FORIS CAMEROON
+MTN
+RINGO
+VODACOM
+YOOMEE
+Aurora Cable Internet
+Bell Aliant
+Bell Internet
+Cable Axion
+Cablevision (Canada)
+Chebucto Community Net
+Cogeco Cable
+Cogeco Connexion inc
+Craig Wireless
+Dery Telecom
+Eastlink (company)
+Electronic Box
+Everus Communications
+Guest-tek
+Information Gateway Services
+Internex Online
+Inukshuk Wireless
+Jet2.net
+Look Communications
+Managed Network Systems, Inc.
+Mountain Cablevision
+National Capital FreeNet
+Novus Entertainment
+Ontera
+Persona Communications
+Primus Canada
+Project Chapleau
+Qiniq
+Rogers Hi-Speed Internet
+Rose Media
+Rush Communications Ltd.
+SaskTel
+Seaside Communications
+Source Cable
+SSI Micro
+TAO (collective)
+TekSavvy
+Telus
+Telus Internet
+Vidéotron
+Vmedia
+Web Community Resource Networks
+Wireless Nomad
+YourLink
+Beget LLc
+Moov
+Socatel
+Telecel
+SAO NET
+Vizocom
+Entel Internet
+Internet Movil
+Telefonica Chile
+Terra
+China Mobile
+China Netcom
+China Telecom
+China TieTong
+China Unicom
+Coldecon (Comunicate Ltda)
+ETB S.A.
+Telefónica Telecom
+WiMAX
+Afripa telecom
+Celtel Congo
+GSI CONGO
+Microcom
+MTN CONGO
+OFIS
+Ofis computers
+American Data Networks
+Amis Telekom
+CARNet
+Optima Telekom
+T-Com
+VIPnet
+Cablenet
+Cytanet
+Logosnet
+Netway
+OTEnet Telecom
+PrimeTel
+ThunderWorx
+Vodanet ISP
+ComX
+Cybercity
+Fullrate
+TDC (Tele-Danmark Communications)
+Telenor Denmark
+Telia Danmark
+STID
+Alegro PCS
+Etapatelecom
+Etisalat Egypt
+LINKdotNET
+Noor
+TE Data
+Telecom Egypt
+Americatel
+NAVEGANTE
+Telefonica
+Telemovil
+Tutopia
+Parknet  SRL
+IPX EG
+Elion
+Starman
+Anvia
+Archipelago Networks
+DNA Oy
+Elisa (company)
+Finnet (DNA)
+FSP (Forssa Telephone Company)
+Lounea
+Nette (ISP)
+Saunalahti
+Sonera
+SurfNet Suomi
+Tele Finland
+Welho
+Alice ( Telecom Italia)
+DartyBox
+France Telecom
+Free (ISP)
+Lyon Internet Exchange
+Neuf Cegetel
+Oleane
+Orange (France Telecom)
+Teleconnect France
+Wanadoo
+World-NET
+ARTEL GABON
+INTERNET GABON
+Arcor
+Claranet
+Freenet AG
+HanseNet
+NetCologne
+O2 (Telefonica)
+QSC AG
+Strato AG
+Tele Columbus
+Telefónica Germany
+Tiscali
+TKS – Telepost Kable-Service
+T-Online
+United Internet
+Select By Region
+ACELON GHANA
+Africa Online
+AFRINET COMMUNICATIONS
+AFRIPA TELECOM GHANA
+BUSYINTERNET
+DART COMMUNICATION
+DISCOVERYTEL GHANA
+ECOBAND NETWORKS
+IBURST GHANA
+INTERNET GHANA
+iWayAfrica
+K NET MULTIMEDIA DATA NETWORK
+KAISS INN
+LINKSERVE
+MOBILE 2 I
+NAS INTER GLOBAL NETWORKS
+NB TELEWORLD GHANA
+NCS
+CTS Gibraltar
+GibNet
+Gibtelecom
+Sapphire Networks
+Altecnet
+Hellas Online
+Net One
+On Telecoms
+Otenet
+Tellas
+Vivodi Telecoms
+Telgua
+AFRIBONE GUINEE
+ETI
+GT and T Guyana Telephone and Telegraph
+GuyanaNet
+i-Net Communications
+Inter.Net.Works
+Netcom Wireless
+Solutions2000
+TelsNet
+Mayanet
+NetSys
+Asia Netcom Asia Pacific Ltd
+C Net
+City Telecom (HK) Ltd
+CPCNet
+Cyber Express Communications Ltd.
+HKNet
+Hong Kong Broadband Network
+I-Cable Communications
+iCare.com Ltd.
+NetFront Information Technology Ltd
+Netvigator
+New World Telecommunications Ltd
+Pacific Internet (Hong Kong) Limited
+Pacific One Net Limited
+PCCW
+So-net Hong Kong
+Towngas Telecommunications Ltd
+Pannon GSM Telecommunication
+T-Home
+UPC
+HIVE (ISP)
+Netheimur
+Síminn
+Snerpa
+Vodafone Iceland
+Vortex (ISP)
+FRiENDi
+Nawras (Qtel)
+Omantel
+Renna (Majan Telecommunication)
+AFSAT COMMUNICATIONS
+BUSHNET
+COMNET
+FRANSCOM
+INFOCOM
+METROCOMIA
+Orange Telecom
+Roke Telkom
+SANYUTEL
+SimbaNET
+Tangerine
+Uganda Telecom Limited
+Warid Telecom Uganda Limited
+Zain Uganda
+Internet Service Providers Association of Pakistan
+NayaTel
+Pakistan Telecommunication Company Ltd
+Paknet
+Supernet Limited
+Wateen Telecom
+Wi-Tribe
+WorldCall
+Airtel India
+Amazon Networking Devices
+Beam Fiber
+Bharti Airtel
+Bharti Enterprises
+BSNL Broadband
+DEN Networks
+Idea Cellular
+Jio
+Madison Media Group
+Mahanagar Telephone Nigam
+MTS M-Blaze
+Reliance Communications
+Sancharnet
+Siti Cable
+Spectranet
+Spice Telecom
+Tata Communications
+Tata Teleservices
+Tikona Digital Networks
+Uninor
+Videocon
+Vodafone India
+You Broadband
+life Astelit
+Lucky Net
+MTS Ukraine
+SvitOnline (Golden Telecom)
+Ukrtelecom
+Vega (Optima Telecom)
+Velton Telecom
+Ab Custom Computers
+Digi Comm Paging and Wireless
+DISH Network
+EAST TEXAS BROADBAND
+Gleason’s Computing
+Nalcom Wireless Communications
+Verizon Wireless
+( Du ) Emirates Integrated Telecommunications Company
+Cygnus Telecom - Satellite Services website
+Etisalat
+Virgin
+Activenet S.A.
+Conexion
+Cyberia Wisp[1]
+itacom Group
+Mediter SRL
+Netvision
+NEWNET
+Parnet S.A.
+Personal
+Planet
+Quanta-Neter
+Rieder Internet
+Skytel
+SuperNet
+Telesurf
+Tigo
+Uninet
+VOX
+CBN
+Circle One
+First Media
+IndosatM2
+PROnet
+Telkom Indonesia
+Wasantara
+Claro
+Movistar
+Nextel
+Qnet
+Communications in Iran
+Mobinnet
+Pars Online
+Sepanta
+Shahrad Network
+Shatel
+Bayan Telecommunications
+Caceres Cable TV
+Destiny Cable
+Mozcom
+PLDT HOME
+Sky Cable Corporation
+6G Internet (company)
+Andrews and Arnold
+AOL Broadband
+Boltblue
+Broadband 4 Rural North
+BT Consumer
+BT Group
+BT Infinity
+BT Total Broadband
+BT Wholesale
+Daisy Group
+Daisy Wholesale
+Demon Internet
+Easynet
+Easynet Connect
+Eclipse Internet
+Entanet
+Fasthosts
+GreenNet
+Heart Internet
+Hyperoptic
+Internet Service Providers Association
+KC (internet service provider)
+KCOM Group
+Lumison
+Manchester Host
+Namesco
+NDO
+Planet Online
+Plusnet
+Poptel
+Sky Broadband
+Supanet Limited
+TalkTalk Business
+TalkTalk Group
+The Cloud (company)
+The Phone Co-op
+Timico
+UKHost4u
+UTV Internet
+Virgin Media Business
+WightFibre
+X-Stream Network
+Baghtel
+HaYaT Telecom LTD
+Scopesky
+Emax-Mt
+Headway Communication Experts
+JMDI
+Punkt UPC
+Solander Sp. z o.o.
+Access Telecom
+AirSpeed Communications
+BT Communications Ireland
+Eircom
+HomeVision
+Internet Service Providers Association of Ireland
+Ireland On-Line
+NTL Ireland
+Perlico
+AR Telecom
+Bragatel
+Broadnet Portugal
+Cabo TV Madeirense
+Cabovisão
+Claranet Portugal
+COLT Telecom
+Fleximédia
+Meo (mobile phone company)
+MEO (Portugal)
+NFSI Telecom
+Nortenet
+NOS (Portuguese media company)
+NOS Comunicações
+Optimus Clix
+SAPO (company)
+TVTEL
+Vodafone Portugal
+012 Smile
+013 Netvision
+014 Bezeq International
+018 Internet
+019 Internet
+Comm.net
+Fast
+Interal - Eilat Inter
+Internet Binat
+Kinneret
+Nativ
+NetTzach
+Rimon
+Spotnet
+UTM
+caribe
+Centennial Communications
+Choice cable (cable)
+Claro (DSL)
+Liberty Cablevision
+Liberty Media
+OneLink Communications
+WorldNet Telecommunications
+BT Italia
+Fastweb (telecommunications company)
+Telecom Italia
+WIND (Italy)
+Qtel
+asolutions
+au Hikari
+Au one net
+BIGLOBE
+InterCon Systems Corporation
+Internet Initiative Japan
+Japan Computer Access Network
+Nifty Corporation
+NTT Plala
+Open Computer Network
+Rakuten Broadband
+Softbank
+So-net
+Spinnet
+TWICS
+Cyberia
+IONet
+Umniah
+Wanadoo (Orange Jordan)
+Zain
+GTS Telecom
+iNES Telecom
+Lifenet
+MetroNet
+Plus Telecom
+RCS and RDS
+Romtelecom
+Skynet
+Synco Telecom
+UPC Romania
+Dedicado
+KazakhTelecom
+2Com Company
+AccessNet (Techno Center Plus)
+AiPi-Com
+ASU OAO Electrosvyaz of Vladimir City
+Beeline (brand)
+CENTRONET
+CISA Ltd.
+Cityline (ISP)
+Complex Computer Systems Ltd.
+CompNet
+Corbina
+DataX FLORIN, Inc.
+Demos Company
+Edisoft
+Elvis Telecom Company
+ExtraNet
+FreeNet
+Garant Park
+GlasNet
+Global One Russia
+InComA Company, Ltd.
+INTERCOM Company, Saratov
+KIS
+LEK Telecom
+MMTEL
+Nakhodka Internet
+NFORIS
+NFOTEL Ltd.
+OJSC VimpelCom
+Online Resource Center
+Peterstar
+PTT-Teleport Moscow
+RELCOM
+Russia-On-Line
+SOVAM Teleport
+Spacenet
+Stack Ltd.
+Syzran
+Uralsvyazinform
+VimpelCom Ltd.
+Virgin Connect
+Vladivostok Telegraph Internet Service
+Yota
+ACCESS KENYA
+ALPHANET COMMUNICATIONS
+BIDII DOT COM
+HABARINET
+INTER CONNECT
+Internet Solutions
+ISP KENYA
+ITNETS EAST AFRICA
+KARIBU NETWORKS
+KENYAWEB'COM
+Safaricom
+Tishknet
+Fast Telecommuncations Co WLL
+KEMS
+Mada Communications
+Qualitynet
+United Networks
+VIVA
+Zajil International Telecom Co
+AT and T Yahoo! High Speed Internet
+CenturyLink
+Charter Communications
+Cincinnati Bell
+Comcast High Speed Internet
+Cox Communications
+Earthlink
+FairPoint Communications
+GHz Wireless
+GitManagement Inc (PandaNET)
+HughesNet
+Mediacom
+Midcontinent Communications
+Optimum Online
+RCN Corporation
+Road Runner High Speed Online (Time Warner Cable)
+Sonic.net
+Towerstream
+Verizon High Speed Internet
+WideOpenWest (WOW!)
+WildBlue
+Windstream
+Atlantic Broadband
+Africa ISP
+Asia ISP
+Central America ISP
+South America ISP
+North America ISP
+Europe ISP
+Oceania ISP
+Tell us about your local area internet service providers (ISP) or site c
+ARTEL COMMUNICATIONS
+RWANDATEL
+TERRACOM
+AKNET
+ASIAINFO
+ElKat
+Saima Telecom
+TOTEL
+Transfer Ltd
+AT and T U-verse
+Cantv
+Digitel
+IFX Networks
+Supercable
+Telecorp
+Viptel
+Apollo
+Baltkom
+EzerNet
+LMT Latvijas Mobilais Telefons
+Neonets
+Telia Latvija
+Triatel
+Versija Vernet
+Broadband Plus
+Cedarcom
+Data Pro Links
+Farah Net
+Fiberlink Networks
+IDM
+Keblon
+Lebanon Online
+Mobi
+Moscanet (Wise)
+Pesco Telecom
+Sodetel
+Spidernet
+TerraNet
+Virtual ISP
+Companhia Santomense de Telecomunicações
+wise
+ILESOTHO
+Arabcircle (Dreamnet, Stars.net)
+Atheer
+AwalNet
+Cyberia (ISP)
+DigiNet
+Digital Technology Co Ltd
+DreamNet
+Gulfnet KSA
+ICC Computers
+Integrated Telecom Company (ITC)
+Jeel
+Nesma
+Nournet
+Sahara Net
+Saudinet
+SBM
+Shabakah
+SPSnet
+Wafai
+LEO
+CMC Telecom
+FPT
+Hanoi Telecom
+Netnam Company
+Saigon Post and Telecommunications Services Corporation
+Vietnam Data Communication Company
+Viettel Company
+Vinaphone
+VNPT
+Libyian Arab Jamahiriya
+ARC INFORMATIQUE
+SONATEL MULTIMEDIA
+IT Yemen
+BeotelNet
+Bitsyu
+DrenikNet
+EUnet
+InfoSky
+PTTnet
+SBB Serbian Broadband
+SCnet
+SezamPro
+Telekom Srbija
+Baltneta
+Bite
+Kavamedia
+Omnitel
+TEO
+ICONZ
+Pacific Internet
+SingNet
+StarHub
+Alternet (Tiscali)
+Cegecom
+Coditel
+CrossComm
+Eltrona
+Luxembourg Online
+Luxweb
+Netline
+Visual Online
+VOXmobile
+Alconet
+AT and T
+Dial Tecom
+GTS Slovakia
+Slovak Tekom
+Slovanet
+UPC Boardband Slovakia
+Euronet
+INet
+MOL Macedonia On-Line
+MTnet (Makedonski Telekom)
+PORTA
+SONET
+UNet
+BLUELINE
+DATA TELECOM SERVICE
+NETCLUB
+ORANGE MADAGASCAR
+AMIS (ISP)
+ARNES
+SiOL Internet (Telekom Slovenije)
+SoftNet
+Volja.net (Tuš Telekom)
+BURCO ELECTRONICS SYSTEMS
+GLOBE INTERNET
+MALAWI NET
+SKYBAND
+Chunghwa Telecom
+HiNet (Chunghwa Telecom)
+Seednet (Far EasTone)
+VIBO Telecom
+AFRIHOST COM
+CYBERTRENZ
+EASY PEASY INTERNET
+GLOBAL DATA SOLUTIONS
+Celcom
+IX Telecom
+Jaring
+Maxis Communications
+Packet One Networks
+PenangFON
+REDtone
+Salamfone
+Streamyx
+TIME Broadband
+TIMENet
+TM Net
+UniFi
+Dhiraagu
+Airtel Tanzania
+Habari Node
+Sasatel
+SatCoNet
+Zantel
+Raajjé Online
+AFRIBONE MALI
+CEFIB INTERNET MALI
+DATATECH
+IKATEL
+MEGASAT
+MICRO SYSTEMS
+SOTELMA
+KT Corp
+LGU
+SKBroadband
+Internet East Company
+Internet KSC
+Internet Thailand
+Loxley Broadband
+Phuket
+True Online
+Bell Net
+GO Plus
+NextWeb
+OnDNet
+Onvol (Melita Cable)
+TE
+Vanilla Tecoms
+Waldonet
+Comunitel Spain
+Direct Telecom
+Euskaltel
+Jazztel
+Mundo-R
+Orange Wanadoo (France Telecom)
+TeleCable
+Telefónica
+SOLUTIONS INFOR.
+BIB
+CAFE
+IDS
+IMET
+ISP LA POSTE ONLINE
+TOGO TELECOM
+WOEZON COM
+EXPERTBYTE
+STATE INFORMATICS
+Airtel (Sri Lanka)
+Dialog Axiata
+Dialog Broadband Networks
+Etisalat (Sri Lanka)
+Hutch (Sri Lanka)
+Lanka Bell
+Mobitel (Sri Lanka)
+Sri Lanka Telecom
+Avantel
+Axtel
+Prodigy (online service)
+Telecosmo
+Telmex
+Canar
+SudaCom
+Thabit (Sudatel)
+ZinaNet
+CQ Link
+SrNet (Telesur)
+A-Net
+AntNet
+birNET
+Bistek
+Bnet
+Comsat
+DetarNet
+DorukNet
+EfesNet
+ForNet
+KilimNet
+Prizmanet
+Superonline
+TTNet
+Turkmentelecom
+Algonet
+Bredbandsbolaget
+Dataphone
+Glocalnet
+PRQ
+Serious Tubes Networks
+Telenordia
+SinCOM Switzerland
+Sunrise Communications AG
+AYA
+e-lcom ISP
+RunNet
+Syrian Telecom
+Syriatel
+Arax-Impex
+Mango Telecom
+Moldtelecom
+Orange Moldova
+StarNet
+IT HOLDINGS
+ORBIT TECHNOLOGY HOLDINGS
+UUNET NAMIBIA
+Gale Force
+Monaco Internet
+Monaco Telecom
+Digicom
+Magicnet (Datakom)
+Mobicom
+Mongolia Telecom
+Univision
+IBW Internet
+Movistar (Telefonica)
+Classic Tech
+Fiber Online
+Lumbini Net
+Mercantile Communications
+Otel Communication Pvt Ltd
+Subisu Nepal
+Crnogorski Telekom
+MTEL
+IX COM
+Liptinfor
+Sahel Com
+Sonitel
+Inwi
+Méditel
+Menara
+Casema
+Hacktic Netwerk
+KPNQwest
+NLnet
+SURFnet
+UPC Nederland
+XS4ALL
+Gateway
+Hyperia
+MTS First Wireless
+MWEB Nigeria
+Netcom
+Prestel
+iBurst Africa
+Inmoz
+Mcel
+Teledata
+TROPICALNET
+Ihug
+ISPANZ
+Lightwire Limited
+NetSmart
+Orcon Internet Limited
+Paradise.net
+Quicksilver (ISP)
+Quik Internet (NZ) Ltd
+Slingshot (ISP)
+Vodafone New Zealand
+Xtra (ISP)
+Active 24
+Canal Digital
+Get AS
+Lyse Energi
+NextGenTel
+Nord-Trøndelag Elektrisitetsverk
+Oslonett
+PowerTech Information Systems
+Start Network
+Troms Kraft
+Uninett
