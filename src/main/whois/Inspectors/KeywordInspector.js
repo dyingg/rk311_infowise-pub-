@@ -32,6 +32,8 @@ class KeywordInspector {
         /vps/,
         /virtual private network/,
         /virtual private server/,
+        /express/,
+        /nord/,
       ];
       this.keyword2 = [
         /hosts/,

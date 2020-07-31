@@ -78,7 +78,7 @@ async function runPipeline(ip) {
   // }
   //Leave this return here to make testing work
   return {
-    value: final,
+    value: parseInt(final),
     sig: result.VPNname.result,
     table: [
       {

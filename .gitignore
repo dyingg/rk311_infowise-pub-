@@ -87,3 +87,6 @@ typings/
 
 # Electron-Forge
 out/
+
+#built ai files
+src/main/whois/AI module/getPrediction.exe
