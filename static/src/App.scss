@@ -87,6 +87,13 @@ body {
   background-color: black;
   padding: 10px;
   color: green;
-  min-height: 150px;
-  max-height: 150px;
+  min-height: 70px;
+  max-height: 70px;
+  overflow-x: scroll;
+  font-family: monospace;
+}
+
+.toplog p {
+  margin: 0;
+  padding: 0;
 }

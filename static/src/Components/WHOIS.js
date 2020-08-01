@@ -19,7 +19,7 @@ const columns = [
     dataIndex: "score",
     render: (tag) => {
       let color = "green";
-      if (tag > 50) {
+      if (tag > 21) {
         color = "volcano";
       }
       return <Tag color={color}>{tag}</Tag>;

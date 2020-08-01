@@ -15,6 +15,8 @@ const { TabPane } = Tabs;
 const { Title } = Typography;
 const { Paragraph } = Typography;
 const electron = window.require("electron");
+const remote = electron.remote;
+const dialog = remote.dialog;
 
 const ipcRenderer = electron.ipcRenderer;
 
@@ -63,6 +65,7 @@ function App() {
   let [score, updateScore] = useState(0);
   let [thirdPartData, updateThirdPartyData] = useState([]);
   let [whoisData, updateWhoISData] = useState([]);
+  let [logs, updateLogs] = useState(["Sucessfully started program."]);
 
   useEffect(() => {
     ipcRenderer.on("thirdPartyData", (e, data) => {
@@ -108,11 +111,21 @@ function App() {
             }}
           />
           <Button type="primary" shape="circle">
-            <ProfileOutlined />
+            <ProfileOutlined
+              onClick={async () => {
+                console.log(
+                  dialog.showOpenDialog({
+                    properties: ["openFile"],
+                  })
+                );
+              }}
+            />
           </Button>
         </div>
         <div className="toplog">
-          <p>Loaded 6 Files</p>
+          {logs.map((log) => (
+            <p>{log}</p>
+          ))}
         </div>
         <div className="info">
           <Tabs defaultActiveKey="1" onChange={callback}>
