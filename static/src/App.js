@@ -10,15 +10,17 @@ import {
 
 import { Layout } from "antd";
 import TitleBar from "./Components/TitleBar";
-import Single from "./Single";
+import ContentManager from "./ContentManager";
 
 const { Header, Footer, Sider, Content } = Layout;
 
 const { SubMenu } = Menu;
 
 function App() {
+  let [content, updateContent] = useState(0);
   const handleClick = (e) => {
     console.log("click ", e);
+    updateContent(e.key);
   };
 
   return (
@@ -76,7 +78,7 @@ function App() {
           </Menu>
         </Sider>
         <Content>
-          <Single />
+          <ContentManager content={content} />
         </Content>
       </Layout>
     </>

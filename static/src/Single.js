@@ -84,6 +84,11 @@ function Single() {
         updateProgramState("Good");
       }
     });
+
+    return function cleanUp() {
+      ipcRenderer.removeAllListeners("thirdPartyData");
+      ipcRenderer.removeAllListeners("whoisData");
+    };
   }, []);
 
   return (
@@ -108,17 +113,6 @@ function Single() {
               ipcRenderer.send("startWhoisModule", value);
             }}
           />
-          <Button type="primary" shape="circle">
-            <ProfileOutlined
-              onClick={async () => {
-                console.log(
-                  dialog.showOpenDialog({
-                    properties: ["openFile"],
-                  })
-                );
-              }}
-            />
-          </Button>
         </div>
         <div className="toplog"></div>
         <div className="info">

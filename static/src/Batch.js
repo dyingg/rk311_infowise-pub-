@@ -84,6 +84,11 @@ function Batch() {
         updateProgramState("Good");
       }
     });
+
+    return function cleanUp() {
+      ipcRenderer.removeAllListeners("thirdPartyData");
+      ipcRenderer.removeAllListeners("whoisData");
+    };
   }, []);
 
   return (
@@ -91,33 +96,24 @@ function Batch() {
       <div className="App">
         <div className="ipBox">
           <div>
-            <Title level={3}>Proxy VPN Check</Title>
+            <Title level={3}>Batch Check</Title>
             <Paragraph className="subtitle">
               Start a comprehensive check to determine whether the given IP is a
               VPN or Proxy
             </Paragraph>
           </div>
-          <Search
-            placeholder="127.0.0.1"
-            loading={programState == "Detecting" ? true : false}
-            enterButton
-            onSearch={(value) => {
-              updateIp(value);
-              updateProgramState("Detecting");
-              ipcRenderer.send("thirdPartyRecon", value);
-              ipcRenderer.send("startWhoisModule", value);
+
+          <Button
+            type="primary"
+            onClick={async () => {
+              console.log(
+                dialog.showOpenDialog({
+                  properties: ["openFile"],
+                })
+              );
             }}
-          />
-          <Button type="primary" shape="circle">
-            <ProfileOutlined
-              onClick={async () => {
-                console.log(
-                  dialog.showOpenDialog({
-                    properties: ["openFile"],
-                  })
-                );
-              }}
-            />
+          >
+            <ProfileOutlined />
           </Button>
         </div>
         <div className="toplog"></div>
