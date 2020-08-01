@@ -27,7 +27,7 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
-    height: 800,
+    height: 900,
     frame: false,
     webPreferences: {
       nodeIntegration: true,
@@ -35,9 +35,9 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  // mainWindow.loadURL("http://localhost:3000");
+  mainWindow.loadURL("http://localhost:3000");
 
-  mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
+  // mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 };

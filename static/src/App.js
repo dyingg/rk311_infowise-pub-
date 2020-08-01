@@ -6,7 +6,8 @@ import TitleBar from "./Components/TitleBar";
 import ThirdParty from "./Components/ThirdParty";
 import WHOIS from "./Components/WHOIS";
 import { Input, Typography, Tabs, Card } from "antd";
-
+import { Button, Tooltip } from "antd";
+import { ProfileOutlined } from "@ant-design/icons";
 import { Progress } from "antd";
 
 const { Search } = Input;
@@ -106,8 +107,13 @@ function App() {
               ipcRenderer.send("startWhoisModule", value);
             }}
           />
+          <Button type="primary" shape="circle">
+            <ProfileOutlined />
+          </Button>
         </div>
-
+        <div className="toplog">
+          <p>Loaded 6 Files</p>
+        </div>
         <div className="info">
           <Tabs defaultActiveKey="1" onChange={callback}>
             <TabPane tab="WHOIS Analysis" key="1">
