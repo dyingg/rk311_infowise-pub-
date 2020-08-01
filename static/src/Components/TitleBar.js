@@ -23,8 +23,8 @@ const theWindow = BrowserWindow.getFocusedWindow();
 function TitleBar() {
   return (
     <div className="title-bar">
-      <DingdingOutlined style={{ fontSize: "30px", color: "#ffffff" }} />
-      <Title level={3} style={{ color: "#ffffff" }}>
+      <DingdingOutlined style={{ fontSize: "24px", color: "#ffffff" }} />
+      <Title level={4} style={{ color: "#ffffff" }}>
         InfoWise{" "}
       </Title>
 
