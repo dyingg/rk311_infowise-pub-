@@ -28,7 +28,7 @@ function App() {
         <Sider>
           <Menu
             onClick={handleClick}
-            style={{ width: 200, height: "100%" }}
+            style={{ width: 200, height: "100vh" }}
             defaultSelectedKeys={["1"]}
             defaultOpenKeys={["sub1"]}
             mode="inline"

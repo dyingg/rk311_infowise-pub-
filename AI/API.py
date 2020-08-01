@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
-import os, pickle
+import os
+import pickle
 import numpy as np
 import tensorflow as tf
 graph = tf.get_default_graph()
@@ -8,10 +9,13 @@ graph = tf.get_default_graph()
 def save_model(filename, model):
     pickle.dump(model, open(filename, 'wb'))
 
+
 def load_model(filename):
     return pickle.load(open(filename, 'rb'))
 
+
 app = Flask(__name__)
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -30,16 +34,19 @@ def index():
     return jsonify({'response': x})
 
 
-if __name__ == "__main__":
+@app.route('/hello', methods=['GET'])
+def hello():
+    return jsonify({'test': 5})
 
-    model_folder = "models"
-    model_list = os.listdir(model_folder)
-    models = []
 
-    for m in model_list:
-        if "ann_model" not in m:
-            continue
-        model_path = os.path.join(model_folder, m)
-        models.append(load_model(model_path))
+model_folder = "models"
+model_list = os.listdir(model_folder)
+models = []
 
-    app.run(debug=True)
+for m in model_list:
+    if "ann_model" not in m:
+        continue
+    model_path = os.path.join(model_folder, m)
+    models.append(load_model(model_path))
+
+app.run(host="0.0.0.0", port=80,  debug=True)

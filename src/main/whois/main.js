@@ -14,6 +14,7 @@ const fs = require("fs");
 const VPNname = require("./Inspectors/VPNname");
 const AI = require("./AI module/AIPredictions");
 const predictions = require("./AI module/AIPredictions");
+const rp = require("request-promise");
 
 async function runPipeline(ip) {
   const WhoisInspector = new InspectorPipeLine();
@@ -36,17 +37,39 @@ async function runPipeline(ip) {
     .addInspector(new IPblacklistInspector())
     .addInspector(new TORInspector())
     .addInspector(new VPNname())
-
     .run();
 
-  let AI_results = await predictions(
-    result.OrgInspectorBlacklist.result,
-    result.BadASNInspector.result,
-    result.TORInspector.result,
-    result.IPblacklistInspector.result,
-    result.ReverseDNSInspector.result,
-    result.KeywordInspector.result
-  );
+  let AI_results = await rp("http://35.184.88.73/", {
+    method: "POST",
+    url: "http://35.184.88.73/",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    json: {
+      data: [
+        result.OrgInspectorBlacklist.result,
+        result.BadASNInspector.result,
+        result.TORInspector.result,
+        result.IPblacklistInspector.result,
+        result.ReverseDNSInspector.result,
+        result.KeywordInspector.result,
+      ],
+    },
+  });
+
+  AI_results = AI_results.response;
+
+  //Replace running models on site with cloud run
+
+  // let AI_results = await predictions(
+  //   result.OrgInspectorBlacklist.result,
+  //   result.BadASNInspector.result,
+  //   result.TORInspector.result,
+  //   result.IPblacklistInspector.result,
+  //   result.ReverseDNSInspector.result,
+  //   result.KeywordInspector.result
+  // );
+  console.log(AI_results);
   let final = (AI_results.reduce((accum, cur) => accum + cur) / 3) * 100;
 
   console.log("IP : " + ip);
@@ -61,7 +84,7 @@ async function runPipeline(ip) {
     final *= 0.9;
   }
 
-  console.log("\nThe final result is  : " + final);
+  // console.log("\nThe final result is  : " + final);
 
   // console.log("\nAverage Score = " + (parseInt(result.BadASNInspector.result) + parseInt(result.GoodASNInspector.result) + parseInt(result.ReverseDNSInspector.result) + parseInt(result.KeywordInspector.result) + parseInt(result.OrgInspectorBlacklist.result) + parseInt(result.OrgInspectorWhitelist.result)) / 4);
 

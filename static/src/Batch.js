@@ -54,7 +54,7 @@ function ResultTitle({ programState, signature }) {
   }
 }
 
-function Single() {
+function Batch() {
   function callback(key) {
     console.log(key);
   }
@@ -162,4 +162,4 @@ function Single() {
   );
 }
 
-export default Single;
+export default Batch;
