@@ -46,8 +46,7 @@ function App() {
                 <Menu.Item key="1">Complete Test</Menu.Item>
               </Menu.ItemGroup>
               <Menu.ItemGroup key="g2" title="Batch IPs">
-                <Menu.Item key="3">Option 3</Menu.Item>
-                <Menu.Item key="4">Option 4</Menu.Item>
+                <Menu.Item key="3">Batch Test</Menu.Item>
               </Menu.ItemGroup>
             </SubMenu>
             <SubMenu
