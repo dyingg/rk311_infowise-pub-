@@ -9,6 +9,8 @@ const abuseMailParameters = ["OrgAbuseEmail"]
 const token = "6014cc7d7ff86e"
 const ipinfo = new IPinfo(token);
 
+const path = require('path');
+
 async function processData(ip) {
     try {
         let whoisData = await lookUp(ip);
@@ -153,7 +155,8 @@ async function getHostName(ip, asn) {
 
 async function getHostNameAndASN(ip) {
     let asn = "", hostName = "";
-    let pythonProcess = spawn('python',["getHostName.py", ip]);
+   
+    let pythonProcess = spawn('python',[path.resolve(__dirname, "getHostName.py"), ip]);
     
     for await (let data of pythonProcess.stdout) {
         data = data.toString().trim();

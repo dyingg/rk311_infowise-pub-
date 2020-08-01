@@ -36,12 +36,17 @@ class OrgInspectorBlacklist {
       .toLowerCase()
       .split(os.EOL);
 
+
+
     this.org_map = {};
 
     this.orgBlacklist.forEach((org) => {
-      let params = org.split("    ");
-      this.org_map[params[0]] = parseFloat(params[1]);
+      let params = org
+      .split("    ");
+      this.org_map[String(params[0])] = parseFloat(params[1]);
     });
+
+    // console.log(this.org_map);
   }
 
   /**
