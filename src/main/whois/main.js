@@ -95,19 +95,19 @@ async function runPipeline(ip) {
 
   if (final >= 0 && final < 45) {
     analysis = String(
-      "Low risk: The IP : " +
+      "Low risk: The IP: " +
         data.ip +
         " has a low score according to our algorithms and databases as well as the various inspectors implemented. It has no abuse issues  reported against it nor is it associated with any malicious activity. It is not present in any spam list or blacklists. This IP does not have any connection to proxy/VPN servers. and hence it is considered as low risk by the scoring algorithm deployed by Infowise."
     );
   } else if (final >= 45 && final < 65) {
     analysis = String(
-      "Suspicious: The IP : " +
+      "Suspicious: The IP: " +
         data.ip +
         " has a score somewhere in the midpoint according to our algorithms and databases as well as the various inspectors implemented.  This IP address is exhibiting questionable and suspicious behavior. It may be associated with any malicious activity. This IP may be  connected to low-risk proxy/VPN servers. and hence it is considered suspicious and unreliable by the scoring algorithm deployed by Infowise."
     );
   } else {
     analysis = String(
-      "High risk: The IP : " +
+      "High risk: The IP: " +
         data.ip +
         " has a score in the higher ranges according to our algorithms and databases as well as the various inspectors implemented.  This IP address is exhibiting questionable, fraudulent  behavior. It is likely that this IP is associated with malicious activity. This IP is deemed to belong to proxy/VPN servers. and hence it is considered unreliable by the scoring algorithm deployed by Infowise."
     );

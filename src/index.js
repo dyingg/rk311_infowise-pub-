@@ -4,6 +4,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const thirdPartyAnalysis = require("./main/thirdparty/index");
 const WHOISModule = require("./main/whois/main");
+// const reportgen = require("./htmlreport");
 
 mongoose.connect(
   "mongodb+srv://admin:anubhavsaha@proxyvpn.lhltg.gcp.mongodb.net/test",
@@ -38,9 +39,9 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL("http://localhost:3000");
+  // mainWindow.loadURL("http://localhost:3000");
 
-  // mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 };
@@ -122,12 +123,14 @@ ipcMain.on("batchProcess", async (event, file) => {
 
 ipcMain.on("render-report", (e, ip) => {
   let result = batchData[ip].fullResult;
+  result.ip = ip;
   let json = JSON.stringify(result);
   fs.writeFile(
     path.resolve(__dirname, "..", "reports", `./${ip}.json`),
     json,
     () => {}
   );
+  // reportgen(result);
 });
 
 app.on("activate", () => {
