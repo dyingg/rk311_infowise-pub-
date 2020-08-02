@@ -4,7 +4,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const thirdPartyAnalysis = require("./main/thirdparty/index");
 const WHOISModule = require("./main/whois/main");
-// const reportgen = require("./htmlreport");
+const reportgen = require("./htmlreport");
 
 mongoose.connect(
   "mongodb+srv://admin:anubhavsaha@proxyvpn.lhltg.gcp.mongodb.net/test",
@@ -100,7 +100,7 @@ ipcMain.on("batchProcess", async (event, file) => {
   ips.forEach(async (ip) => {
     let result = await WHOISModule(ip);
     if (result) {
-      if (result.value > 55) {
+      if (result.value > 50) {
         batchData[ip] = {
           status: 2,
           ip,
@@ -130,7 +130,7 @@ ipcMain.on("render-report", (e, ip) => {
     json,
     () => {}
   );
-  // reportgen(result);
+  reportgen(result);
 });
 
 app.on("activate", () => {

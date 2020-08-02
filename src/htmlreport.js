@@ -65,7 +65,7 @@ function renderLog(report) {
   pdf
     .create(content, options)
     .toFile(
-      path.resolve(__dirname, "..", "reports", `./${ip}.pdf`),
+      path.resolve(__dirname, "..", "reports", `./${report.ip}.pdf`),
       (f, err) => {}
     );
 }
