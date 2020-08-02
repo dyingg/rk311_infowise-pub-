@@ -1,5 +1,7 @@
 import React from "react";
 import { Table, Tag, Space, Button } from "antd";
+const electron = window.require("electron");
+const ipcRenderer = electron.ipcRenderer;
 
 const columns = [
   {
@@ -22,10 +24,19 @@ const columns = [
   },
   {
     title: "Action",
-    key: "score",
-    dataIndex: "score",
+    key: "ip",
+    dataIndex: "ip",
     render: (tag) => {
-      return <Button>Details</Button>;
+      return (
+        <Button
+          onClick={() => {
+            ipcRenderer.send("render-report", tag);
+            alert("Report saved");
+          }}
+        >
+          Details
+        </Button>
+      );
     },
   },
 ];

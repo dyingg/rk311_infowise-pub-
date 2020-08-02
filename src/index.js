@@ -96,7 +96,6 @@ ipcMain.on("batchProcess", async (event, file) => {
   //Update UI
 
   event.sender.send("updateBatchState", batchData);
-
   ips.forEach(async (ip) => {
     let result = await WHOISModule(ip);
     if (result) {
@@ -119,6 +118,16 @@ ipcMain.on("batchProcess", async (event, file) => {
 
     event.sender.send("updateBatchState", batchData);
   });
+});
+
+ipcMain.on("render-report", (e, ip) => {
+  let result = batchData[ip].fullResult;
+  let json = JSON.stringify(result);
+  fs.writeFile(
+    path.resolve(__dirname, "..", "reports", `./${ip}.json`),
+    json,
+    () => {}
+  );
 });
 
 app.on("activate", () => {
