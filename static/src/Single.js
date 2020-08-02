@@ -78,7 +78,7 @@ function Single() {
       updateSignatureMatched(result.sig);
       updateWhoISData(result.table);
       updateScore(result.value);
-      if (result.value > 65) {
+      if (result.value > 50) {
         updateProgramState("Bad");
       } else {
         updateProgramState("Good");
@@ -134,7 +134,7 @@ function Single() {
                   type="circle"
                   percent={score}
                   width={80}
-                  status={score > 65 ? "exception" : ""}
+                  status={score > 50 ? "exception" : ""}
                   format={(percent) => percent + "%"}
                 />
               </div>
