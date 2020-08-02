@@ -5,10 +5,21 @@ import "./App.scss";
 import TitleBar from "./Components/TitleBar";
 import ThirdParty from "./Components/ThirdParty";
 import WHOIS from "./Components/WHOIS";
+
+import IPDisplay from "./Components/IPDisplay.js";
+
 import { Input, Typography, Tabs, Card } from "antd";
 import { Button, Tooltip } from "antd";
-import { ProfileOutlined } from "@ant-design/icons";
+import {
+  ProfileOutlined,
+  UploadOutlined,
+  CheckOutlined,
+  WarningOutlined,
+  DotChartOutlined,
+} from "@ant-design/icons";
 import { Progress } from "antd";
+
+import { Statistic, Row, Col } from "antd";
 
 const { Search } = Input;
 const { TabPane } = Tabs;
@@ -19,40 +30,6 @@ const remote = electron.remote;
 const dialog = remote.dialog;
 
 const ipcRenderer = electron.ipcRenderer;
-
-function ResultTitle({ programState, signature }) {
-  if (programState == "Idle") {
-    return (
-      <>
-        <Title level={4}>Awaiting Input</Title>
-        <Paragraph>Please enter an IP to analyze</Paragraph>
-      </>
-    );
-  } else if (programState == "Detecting") {
-    return (
-      <>
-        <Title level={3}>Detecting</Title>
-        <Paragraph>Running modules...</Paragraph>
-      </>
-    );
-  } else if (programState == "Bad") {
-    return (
-      <>
-        <Title type="danger" level={3}>
-          VPN/Proxy Detected
-        </Title>
-        <Paragraph>This IP is a VPN/Proxy {signature}</Paragraph>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <Title level={3}>Good Ip</Title>
-        <Paragraph>A VPN or Proxy was not detected</Paragraph>
-      </>
-    );
-  }
-}
 
 function Batch() {
   function callback(key) {
@@ -97,62 +74,68 @@ function Batch() {
         <div className="ipBox">
           <div>
             <Title level={3}>Batch Check</Title>
+            <Button
+              type="primary"
+              onClick={async () => {
+                console.log(
+                  dialog.showOpenDialog({
+                    properties: ["openFile"],
+                  })
+                );
+              }}
+            >
+              <UploadOutlined />
+            </Button>
             <Paragraph className="subtitle">
-              Start a comprehensive check to determine whether the given IP is a
-              VPN or Proxy
+              Masscheck IPs from .txt or csv.
             </Paragraph>
           </div>
+        </div>
 
-          <Button
-            type="primary"
-            onClick={async () => {
-              console.log(
-                dialog.showOpenDialog({
-                  properties: ["openFile"],
-                })
-              );
-            }}
-          >
-            <ProfileOutlined />
-          </Button>
+        <div className="result">
+          <Card bordered={true} style={{ width: "100%" }}>
+            <div className="result">
+              <Statistic
+                title="Good"
+                value={11.28}
+                precision={2}
+                valueStyle={{ color: "#3f8600" }}
+                prefix={<CheckOutlined />}
+                suffix="%"
+              />
+              <Statistic
+                title="Bad"
+                value={11.28}
+                precision={2}
+                valueStyle={{ color: "#cf1322" }}
+                prefix={<WarningOutlined />}
+                suffix="%"
+              />
+              <Statistic
+                title="Scanning"
+                value={11.28}
+                precision={2}
+                prefix={<DotChartOutlined />}
+                suffix="%"
+              />
+            </div>
+          </Card>
         </div>
         <div className="toplog"></div>
         <div className="info">
           <Tabs defaultActiveKey="1" onChange={callback}>
-            <TabPane tab="WHOIS Analysis" key="1">
-              <WHOIS data={whoisData} />
+            <TabPane tab="Good" key="1">
+              <IPDisplay />
             </TabPane>
-            <TabPane tab="Third Party Analysis" key="2">
-              <ThirdParty data={thirdPartData} />
+            <TabPane tab="Bad" key="2">
+              <IPDisplay />
+            </TabPane>
+            <TabPane tab="Processing" key="3">
+              <IPDisplay />
             </TabPane>
           </Tabs>
         </div>
         {/* RESULT DISPLAY */}
-        <div className="result">
-          <Card bordered={true} style={{ width: "100%" }}>
-            <div className="result">
-              <div>
-                <Progress
-                  type="circle"
-                  percent={score}
-                  width={80}
-                  status={score > 65 ? "exception" : ""}
-                  format={(percent) => percent + "%"}
-                />
-              </div>
-              <div>
-                <ResultTitle
-                  programState={programState}
-                  signature={signatureMatched}
-                />
-              </div>
-              <div>
-                <Title level={3}>{ip}</Title>
-                <Paragraph>Infowise Beta 0.5</Paragraph>
-              </div>
-            </div>
-          </Card>
-        </div>
       </div>
     </div>
   );
