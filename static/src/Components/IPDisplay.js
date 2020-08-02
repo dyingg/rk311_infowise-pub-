@@ -31,7 +31,6 @@ const columns = [
         <Button
           onClick={() => {
             ipcRenderer.send("render-report", tag);
-            alert("Report saved");
           }}
         >
           Details

@@ -126,6 +126,7 @@ ipcMain.on("batchProcess", async (event, file) => {
       ip,
       log: logJson,
       timestamp,
+      score: result.value,
     });
 
     let savedIPReport = await ipReport.save();
@@ -157,11 +158,20 @@ ipcMain.on("batchProcess", async (event, file) => {
 });
 
 ipcMain.on("getRecent", async (e) => {
-  let res = await Report.find({}, "_id ip timestamp", {
+  console.log("Query for most recent");
+
+  let res = await Report.find({}, "_id ip timestamp score", {
     sort: { created_at: -1 },
   })
     .limit(10)
     .lean();
+
+  res = res.map((record) => {
+    record.reportId = record._id.toString();
+    return record;
+  });
+
+  console.log(res);
 
   e.sender.send("updateRecent", res);
 });

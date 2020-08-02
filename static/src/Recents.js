@@ -24,13 +24,16 @@ function LogSearch() {
   let [data, updateData] = useState([]);
 
   useEffect(() => {
-    ipcRenderer.on("updateRecent", (e, v) => updateData(v));
+    ipcRenderer.on("updateRecent", (e, v) => {
+      console.log(v);
+      updateData(v);
+    });
     ipcRenderer.send("getRecent");
 
     return function cleanup() {
       ipcRenderer.removeAllListeners("updateRecent");
     };
-  });
+  }, []);
 
   return (
     <div>
