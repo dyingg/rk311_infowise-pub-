@@ -60,8 +60,8 @@ class ReverseDNSInspector {
 
       //Pre query match
 
-      if (matchKeyword(reversedDNS, this.level1Keywords)) return 70;
-      if (matchKeyword(reversedDNS, this.level2Keywords)) return 100;
+      if (matchKeyword(reversedDNS, this.level1Keywords)) return [70, String("The domain : " + reversedDNS + " obtained from the inspection was detected to be a part of Cloud/Hosting service based on the algorithm used by the inspector. Hence, a 70 out of 100 score is devoted to this IP by the enforced module.")];
+      if (matchKeyword(reversedDNS, this.level2Keywords)) return [100, String("The domain : " + reversedDNS + " obtained from the inspection was detected to be a part of Proxy/VPN service based on the algorithm used by the inspector. Hence, a score of 100 is devoted to this IP by the enforced module.")];
 
       //match their webpage
       try {
@@ -71,18 +71,18 @@ class ReverseDNSInspector {
         });
 
         //Keyword matching
-        if (matchKeyword(resp, this.level2Keywords)) return 100;
-        else if (matchKeyword(resp, this.level1Keywords)) return 70;
+        if (matchKeyword(resp, this.level2Keywords)) return [100, String("The Contents of the website for this domain : " + reversedDNS + " obtained from the inspection was detected to be a part of Proxy/VPN service based on the algorithm used by the inspector. Hence, a score of 100 is devoted to this IP by the enforced module.")];
+        else if (matchKeyword(resp, this.level1Keywords)) return [70, String("The Contents of the website for this domain : " + reversedDNS + " obtained from the inspection was detected to be a part of Hosting/Cloud service based on the algorithm used by the inspector. Hence, a 70 out of 100 score is devoted to this IP by the enforced module.")];
         //This is a clean page
-        return 0;
+        return [0, "The domain and the contents of the website obtained from the insvestigation seems to be secure based on the inspector's search algorithm. Hence a NULL score is devoted to this IP by the enforced inspector."];
       } catch (e) {
         // console.log(e);
-        return 0;
+        return [0, "The domain and the contents of the website obtained from the insvestigation seems to be secure based on the inspector's search algorithm. Hence a NULL score is devoted to this IP by the enforced inspector."];
       }
       //others
     } catch (e) {
       // console.log(e);
-      return 20;
+      return [20, "The domain was unreachable by the inspectors search algorithm. Hence a 20 out of 100 score is devoted to this IP as it has an unknown reputation according to the enforced module."];
     }
   }
 

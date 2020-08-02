@@ -37,6 +37,7 @@ async function runPipeline(ip) {
     .addInspector(new IPblacklistInspector())
     .addInspector(new TORInspector())
     .addInspector(new VPNname())
+
     .run();
 
   let AI_results = await rp("http://35.184.88.73/", {
@@ -47,29 +48,18 @@ async function runPipeline(ip) {
     },
     json: {
       data: [
-        result.OrgInspectorBlacklist.result,
-        result.BadASNInspector.result,
-        result.TORInspector.result,
-        result.IPblacklistInspector.result,
-        result.ReverseDNSInspector.result,
-        result.KeywordInspector.result,
+        result.OrgInspectorBlacklist.result[0],
+        result.BadASNInspector.result[0],
+        result.TORInspector.result[0],
+        result.IPblacklistInspector.result[0],
+        result.ReverseDNSInspector.result[0],
+        result.KeywordInspector.result[0],
       ],
     },
   });
 
   AI_results = AI_results.response;
 
-  //Replace running models on site with cloud run
-
-  // let AI_results = await predictions(
-  //   result.OrgInspectorBlacklist.result,
-  //   result.BadASNInspector.result,
-  //   result.TORInspector.result,
-  //   result.IPblacklistInspector.result,
-  //   result.ReverseDNSInspector.result,
-  //   result.KeywordInspector.result
-  // );
-  console.log(AI_results);
   let final = (AI_results.reduce((accum, cur) => accum + cur) / 3) * 100;
 
   console.log("IP : " + ip);
@@ -84,7 +74,7 @@ async function runPipeline(ip) {
     final *= 0.9;
   }
 
-  // console.log("\nThe final result is  : " + final);
+  console.log("\nThe final result is  : " + final);
 
   // console.log("\nAverage Score = " + (parseInt(result.BadASNInspector.result) + parseInt(result.GoodASNInspector.result) + parseInt(result.ReverseDNSInspector.result) + parseInt(result.KeywordInspector.result) + parseInt(result.OrgInspectorBlacklist.result) + parseInt(result.OrgInspectorWhitelist.result)) / 4);
 
@@ -101,40 +91,80 @@ async function runPipeline(ip) {
   // }
   //Leave this return here to make testing work
   console.log(result);
+  let analysis = "";
+
+  if (final >= 0 && final < 45) {
+    analysis = String(
+      "Low risk: The IP : " +
+        data.ip +
+        " has a low score according to our algorithms and databases as well as the various inspectors implemented. It has no abuse issues  reported against it nor is it associated with any malicious activity. It is not present in any spam list or blacklists. This IP does not have any connection to proxy/VPN servers. and hence it is considered as low risk by the scoring algorithm deployed by Infowise."
+    );
+  } else if (final >= 45 && final < 65) {
+    analysis = String(
+      "Suspicious: The IP : " +
+        data.ip +
+        " has a score somewhere in the midpoint according to our algorithms and databases as well as the various inspectors implemented.  This IP address is exhibiting questionable and suspicious behavior. It may be associated with any malicious activity. This IP may be  connected to low-risk proxy/VPN servers. and hence it is considered suspicious and unreliable by the scoring algorithm deployed by Infowise."
+    );
+  } else {
+    analysis = String(
+      "High risk: The IP : " +
+        data.ip +
+        " has a score in the higher ranges according to our algorithms and databases as well as the various inspectors implemented.  This IP address is exhibiting questionable, fraudulent  behavior. It is likely that this IP is associated with malicious activity. This IP is deemed to belong to proxy/VPN servers. and hence it is considered unreliable by the scoring algorithm deployed by Infowise."
+    );
+  }
+  console.log("\n" + analysis);
+  console.log("\nAbuse Mail : ");
+  console.log(data.abuseMail);
+  console.log("\nAbuse Phone : " + data.abusePhone);
+  console.log("\nOrganisation Tech. Phone : " + data.orgTechPhone);
+  console.log("\nPhone : " + data.phone);
 
   return {
     value: parseInt(final),
     sig: result.VPNname.result,
+    analysis,
+    contact: [
+      ["Abuse Mail", data.abuseMail],
+      ["Abuse Phone", data.abusePhone],
+      ["Organisation Tech. Phone", data.orgTechPhone],
+      ["Phone", data.phone],
+    ],
     table: [
       {
         name: "OrgInspector",
         time: result.OrgInspectorBlacklist.time,
-        score: result.OrgInspectorBlacklist.result,
+        score: result.OrgInspectorBlacklist.result[0],
+        remarks: result.OrgInspectorBlacklist.result[1],
       },
       {
         name: "BadASNInspector",
         time: result.BadASNInspector.time,
-        score: result.BadASNInspector.result,
+        score: result.BadASNInspector.result[0],
+        remarks: result.BadASNInspector.result[1],
       },
       {
         name: "TOR Inspector",
         time: result.TORInspector.time,
-        score: result.TORInspector.result,
+        score: result.TORInspector.result[0],
+        remarks: result.TORInspector.result[1],
       },
       {
         name: "IP BlacklistInspector",
         time: result.IPblacklistInspector.time,
-        score: result.IPblacklistInspector.result,
+        score: result.IPblacklistInspector.result[0],
+        remarks: result.IPblacklistInspector.result[1],
       },
       {
         name: "ReverseDNSInspector",
         time: result.ReverseDNSInspector.time,
-        score: result.ReverseDNSInspector.result,
+        score: result.ReverseDNSInspector.result[0],
+        remarks: result.ReverseDNSInspector.result[1],
       },
       {
         name: "KeywordInspector",
         time: result.KeywordInspector.time,
-        score: result.KeywordInspector.result,
+        score: result.KeywordInspector.result[0],
+        remarks: result.KeywordInspector.result[1],
       },
     ],
   };

@@ -25,7 +25,7 @@ class IPblacklistInspector {
   async inspectionTechnique(ip) {
     let result = "";
     let blackListCount = await blacklists.countDocuments({ ip: ip });
-    console.log(blackListCount);
+    // console.log(blackListCount);
     let pythonProcess = spawn("python", [
       path.resolve(__dirname, "matchBlacklists.py"),
       ip,
@@ -33,10 +33,10 @@ class IPblacklistInspector {
     ]);
     for await (const data of pythonProcess.stdout) {
       result = String(data).trim();
-      console.log(result);
+      // console.log(result);
     }
     // console.log(__dirname);
-    return parseInt(result);
+    return [parseInt(result), String("The IP : " + ip +" has been found " + parseInt(result) +" times in the blacklist accumulated by Info-wise.")];
   }
 
   /**

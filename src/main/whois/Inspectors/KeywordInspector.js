@@ -57,12 +57,12 @@ class KeywordInspector {
     //console.log(data);
 
     //Matching the Keywords in comments
-    if (matchKeyword(data.name.toLowerCase(), this.keyword1)) return 100;
-    if (matchKeyword(data.name.toLowerCase(), this.keyword2)) return 70;
-    if (matchKeyword(data.comments.join().toLowerCase(), this.keyword1)) return 100;
-    if (matchKeyword(data.comments.join().toLowerCase(), this.keyword2)) return 60;
+    if (matchKeyword(data.name.toLowerCase(), this.keyword1)) return [100, "The organisation name for this particular IP suggests that it belongs to a Proxy/VPN service provider based on the keyword search algorithm used by the enforced inspector."];
+    if (matchKeyword(data.name.toLowerCase(), this.keyword2)) return [70, "The organisation name for this particular IP suggests that it belongs to a Cloud/Hosting service provider based on the keyword search algorithm used by the enforced inspector."];
+    if (matchKeyword(data.comments.join().toLowerCase(), this.keyword1)) return [100, "The WHOIS data for this IP suggests that it belongs to a Proxy/VPN service provider based on the keyword search algorithm used by the enforced inspector."];
+    if (matchKeyword(data.comments.join().toLowerCase(), this.keyword2)) return [60, "The WHOIS data for this IP suggests that it belongs to a Cloud/Hosting service provider based on the keyword search algorithm used by the enforced inspector."];
     //No keywords matches
-    return 0;
+    return [0, "The WHOIS data and the organisation name for this IP is detected to contain no inferior keywords which might suggest it being a malacious IP. Hence, a NULL score is assigned to this IP by the enforced Inspector."];
   }
 
   /**

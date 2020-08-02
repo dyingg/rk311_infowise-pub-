@@ -8,25 +8,23 @@ const commentsParameters = ["remarks", "comment", "netname", "e-mail", "OrgAbuse
 const abuseMailParameters = ["OrgAbuseEmail"] 
 const token = "6014cc7d7ff86e"
 const ipinfo = new IPinfo(token);
-
 const path = require('path');
-
 async function processData(ip) {
+
+    var asnList = [];
+    let commentsList = [];
+    let asn = "", hostName = "", allData = "";
+    let abuseMail = {};
+    let phone = "", abusePhone = "", orgTechPhone = "";
+    let temp = await getHostNameAndASN(ip);
+    asn = temp[0], hostName = temp[1];
+
     try {
         let whoisData = await lookUp(ip);
         // console.log(JSON.stringify(whoisData));
-        
-
+    
         whoisData = whoisData.whois;
-        var asnList = [];
-        let commentsList = [];
-        let asn = "", hostName = "", allData = "";
-        let abuseMail = {}
-        
-        let temp = await getHostNameAndASN(ip);
-        asn = temp[0], hostName = temp[1];
-        
-
+    
         for(i in whoisData) {
             
             let whoisKeys = {};
@@ -40,41 +38,61 @@ async function processData(ip) {
             commentsList = commentsList.concat(getComments(whoisData[i], whoisKeys));
             abuseMail = getAbusemail(whoisData[i], abuseMail);
 
-        }
+            if("phone" in whoisData[i])
+                phone = whoisData[i]["phone"][0];
 
-        
-        if(asn == "") {
-            if(asnList.length == 0)
-                asn = parseASN(await getAsnFromThirdParty(ip));
-            else
-                asn = asnList[0];
-        }
+            if("OrgAbusePhone" in whoisData[i])
+                abusePhone = whoisData[i]["OrgAbusePhone"][0];
 
-        if(hostName == "")
+            if("OrgTechPhone" in whoisData[i])
+                orgTechPhone = whoisData[i]["OrgTechPhone"][0];
+
+        }
+    }
+    catch {}
+
+    
+    if(asn == "") {
+        if(asnList.length == 0)
+            asn = parseASN(await getAsnFromThirdParty(ip));
+        else
+            asn = asnList[0];
+    }
+
+    if(hostName == "") {
+        try{
             hostName = await getHostName(ip, "AS" + asn);
-
-        parsedData = {
-            "asn": asn,
-            "comments": commentsList,
-            "name": hostName,
-            "abuseMail": abuseMail,
-            "all": allData
-        };
-
-        // console.log(parsedData);
-
-        return parsedData;
+        }
+        catch {
+            hostName = ""
+        }
     }
-    catch {
-        return null;
-    }
+
+
+    parsedData = {
+        "asn": asn,
+        "comments": commentsList,
+        "name": hostName,
+        "abuseMail": abuseMail,
+        "abusePhone": abusePhone,
+        "orgTechPhone": orgTechPhone,
+        "phone": phone,
+        "all": allData
+    };
+
+    // console.log(parsedData);
+
+    return parsedData;
+    
 }
 
 function parseASN(asn) {
-    if(asn.length > 0 && (asn.startsWith("AS") || asn.startsWith("as")))
-        return asn.substring(2);
-
-    return asn
+    try{
+        if(asn.length > 0 && (asn.startsWith("AS") || asn.startsWith("as")))
+            return asn.substring(2);
+        return asn
+    }
+    catch {return ""}
 }
 
 function parseKeys(dict, key) {
@@ -155,7 +173,6 @@ async function getHostName(ip, asn) {
 
 async function getHostNameAndASN(ip) {
     let asn = "", hostName = "";
-   
     let pythonProcess = spawn('python',[path.resolve(__dirname, "getHostName.py"), ip]);
     
     for await (let data of pythonProcess.stdout) {
@@ -191,7 +208,7 @@ async function getAsnFromThirdParty(ip) {
 }
 
 // getHostName("7.121.188.10", "");
-// processData("164.132.92.180");
+processData("103.27.142.54");
 
 // getHostNameAndASN("138.68.184.50");
 

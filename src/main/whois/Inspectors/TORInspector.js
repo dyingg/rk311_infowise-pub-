@@ -36,11 +36,11 @@ class TORInspector {
    */
   async inspectionTechnique(data) {
     if (data in this.tor_map) {
-      return 1;
+      return [1, String("The IP : " + data +", is recognized to be a TOR exit node based on the search algorithm enforced by the Inspector designated for this task.")];
     }
 
     //Not a TOR exit node
-    return 0;
+    return [0, String("This IP : " + data + ", is not recognized to be a TOR exit node based on the search algorithm enforced by the Inspector designated for this task.")];
   }
 
   /**
