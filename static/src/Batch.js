@@ -7,6 +7,7 @@ import ThirdParty from "./Components/ThirdParty";
 import WHOIS from "./Components/WHOIS";
 
 import IPDisplay from "./Components/IPDisplay.js";
+import Processing from "./Components/Processing.js";
 
 import { Input, Typography, Tabs, Card } from "antd";
 import { Button, Tooltip } from "antd";
@@ -35,35 +36,53 @@ function Batch() {
   function callback(key) {
     console.log(key);
   }
-  let [programState, updateProgramState] = useState("Idle");
-  let [signatureMatched, updateSignatureMatched] = useState("");
-  let [ip, updateIp] = useState("");
-  let [score, updateScore] = useState(0);
-  let [thirdPartData, updateThirdPartyData] = useState([]);
-  let [whoisData, updateWhoISData] = useState([]);
-  let [logs, updateLogs] = useState(["Sucessfully started program."]);
+
+  let [good, updateGood] = useState([]);
+  let [bad, updateBad] = useState([]);
+  let [processing, updateProcessing] = useState([]);
 
   useEffect(() => {
-    ipcRenderer.on("thirdPartyData", (e, data) => {
-      updateThirdPartyData(data);
-      console.log(data);
-    });
+    // ipcRenderer.on("thirdPartyData", (e, data) => {
+    //   updateThirdPartyData(data);
+    //   console.log(data);
+    // });
 
-    ipcRenderer.on("whoisData", (e, result) => {
-      // console.log(result);
-      // alert("here");
-      updateSignatureMatched(result.sig);
-      updateWhoISData(result.table);
-      updateScore(result.value);
-      if (result.value > 65) {
-        updateProgramState("Bad");
-      } else {
-        updateProgramState("Good");
-      }
+    ipcRenderer.on("updateBatchState", (e, state) => {
+      let good = [];
+      let bad = [];
+      let processing = [];
+
+      Object.keys(state).forEach((ip) => {
+        if (state[ip].status == 2) {
+          bad.push(state[ip]);
+        } else if (state[ip].status == 1) {
+          good.push(state[ip]);
+        } else {
+          processing.push(state[ip]);
+        }
+      });
+
+      updateGood(good);
+      updateBad(bad);
+      updateProcessing(processing);
+
+      console.log(state);
     });
+    // ipcRenderer.on("whoisData", (e, result) => {
+    //   // console.log(result);
+    //   // alert("here");
+    //   updateSignatureMatched(result.sig);
+    //   updateWhoISData(result.table);
+    //   updateScore(result.value);
+    //   if (result.value > 65) {
+    //     updateProgramState("Bad");
+    //   } else {
+    //     updateProgramState("Good");
+    //   }
+    // });
 
     return function cleanUp() {
-      ipcRenderer.removeAllListeners("thirdPartyData");
+      ipcRenderer.removeAllListeners("updateBatchState");
       ipcRenderer.removeAllListeners("whoisData");
     };
   }, []);
@@ -76,12 +95,11 @@ function Batch() {
             <Title level={3}>Batch Check</Title>
             <Button
               type="primary"
-              onClick={async () => {
-                console.log(
-                  dialog.showOpenDialog({
-                    properties: ["openFile"],
-                  })
-                );
+              onClick={() => {
+                ipcRenderer.send("batchProcess", "start");
+                // dialog.showOpenDialog({
+                //   properties: ["openFile"],
+                // });
               }}
             >
               <UploadOutlined />
@@ -97,26 +115,26 @@ function Batch() {
             <div className="result">
               <Statistic
                 title="Good"
-                value={11.28}
-                precision={2}
+                value={good.length}
+                precision={0}
                 valueStyle={{ color: "#3f8600" }}
                 prefix={<CheckOutlined />}
-                suffix="%"
+                suffix="Ips"
               />
               <Statistic
                 title="Bad"
-                value={11.28}
-                precision={2}
+                value={bad.length}
+                precision={0}
                 valueStyle={{ color: "#cf1322" }}
                 prefix={<WarningOutlined />}
-                suffix="%"
+                suffix="Ips"
               />
               <Statistic
                 title="Scanning"
-                value={11.28}
-                precision={2}
+                value={processing.length}
+                precision={0}
                 prefix={<DotChartOutlined />}
-                suffix="%"
+                suffix="Ips"
               />
             </div>
           </Card>
@@ -125,13 +143,13 @@ function Batch() {
         <div className="info">
           <Tabs defaultActiveKey="1" onChange={callback}>
             <TabPane tab="Good" key="1">
-              <IPDisplay />
+              <IPDisplay data={good} />
             </TabPane>
             <TabPane tab="Bad" key="2">
-              <IPDisplay />
+              <IPDisplay data={bad} />
             </TabPane>
             <TabPane tab="Processing" key="3">
-              <IPDisplay />
+              <Processing data={processing} />
             </TabPane>
           </Tabs>
         </div>

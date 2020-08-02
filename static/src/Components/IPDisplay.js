@@ -1,28 +1,31 @@
 import React from "react";
-import { Table, Tag, Space } from "antd";
+import { Table, Tag, Space, Button } from "antd";
 
 const columns = [
   {
     title: "IP",
-    dataIndex: "name",
+    dataIndex: "ip",
     key: "name",
     render: (text) => <a>{text}</a>,
   },
   {
     title: "Score",
-    dataIndex: "time",
-    key: "status",
+    dataIndex: "result",
+    key: "result",
+    render: (tag) => {
+      let color = "green";
+      if (tag > 55) {
+        color = "volcano";
+      }
+      return <Tag color={color}>{tag}</Tag>;
+    },
   },
   {
     title: "Action",
     key: "score",
     dataIndex: "score",
     render: (tag) => {
-      let color = "green";
-      if (tag > 21) {
-        color = "volcano";
-      }
-      return <Tag color={color}>{tag}</Tag>;
+      return <Button>Details</Button>;
     },
   },
 ];

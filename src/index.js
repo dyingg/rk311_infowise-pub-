@@ -1,5 +1,6 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow, ipcMain, dialog } = require("electron");
 const path = require("path");
+const fs = require("fs");
 const mongoose = require("mongoose");
 const thirdPartyAnalysis = require("./main/thirdparty/index");
 const WHOISModule = require("./main/whois/main");
@@ -22,6 +23,8 @@ if (require("electron-squirrel-startup")) {
   // eslint-disable-line global-require
   app.quit();
 }
+
+let batchData = {};
 
 const createWindow = () => {
   // Create the browser window.
@@ -69,6 +72,53 @@ ipcMain.on("startWhoisModule", async (event, ip) => {
   let result = await WHOISModule(ip);
 
   event.sender.send("whoisData", result);
+});
+
+ipcMain.on("batchProcess", async (event, file) => {
+  let fileSelection = await dialog.showOpenDialog({
+    properties: ["openFile"],
+  });
+
+  console.log();
+
+  let batchFile = fileSelection.filePaths[0];
+
+  let ipFile = fs.readFileSync(batchFile, "utf-8");
+
+  let ips = ipFile.split("\r\n");
+
+  ips.forEach((ip) => {
+    batchData[ip] = {
+      status: 0,
+      ip,
+    };
+  });
+  //Update UI
+
+  event.sender.send("updateBatchState", batchData);
+
+  ips.forEach(async (ip) => {
+    let result = await WHOISModule(ip);
+    if (result) {
+      if (result.value > 55) {
+        batchData[ip] = {
+          status: 2,
+          ip,
+          fullResult: result,
+          result: result.value,
+        };
+      } else {
+        batchData[ip] = {
+          status: 1,
+          ip,
+          fullResult: result,
+          result: result.value,
+        };
+      }
+    }
+
+    event.sender.send("updateBatchState", batchData);
+  });
 });
 
 app.on("activate", () => {
