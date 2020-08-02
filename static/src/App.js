@@ -9,8 +9,10 @@ import {
 } from "@ant-design/icons";
 
 import { Layout } from "antd";
+
 import TitleBar from "./Components/TitleBar";
 import ContentManager from "./ContentManager";
+import { connect } from "mongoose";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -18,6 +20,7 @@ const { SubMenu } = Menu;
 
 function App() {
   let [content, updateContent] = useState(0);
+  let [networkStatus, updateNetwork] = useState("online");
   const handleClick = (e) => {
     console.log("click ", e);
     updateContent(e.key);
@@ -51,17 +54,9 @@ function App() {
                 <Menu.Item key="3">Batch Test</Menu.Item>
               </Menu.ItemGroup>
             </SubMenu>
-            <SubMenu
-              key="sub2"
-              icon={<AppstoreOutlined />}
-              title="Navigation Two"
-            >
-              <Menu.Item key="5">Option 5</Menu.Item>
-              <Menu.Item key="6">Option 6</Menu.Item>
-              <SubMenu key="sub3" title="Submenu">
-                <Menu.Item key="7">Option 7</Menu.Item>
-                <Menu.Item key="8">Option 8</Menu.Item>
-              </SubMenu>
+            <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Logging">
+              <Menu.Item key="5">Search</Menu.Item>
+              <Menu.Item key="6">Recent</Menu.Item>
             </SubMenu>
             <SubMenu
               key="sub4"

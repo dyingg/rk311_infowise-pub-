@@ -34,3 +34,10 @@ pip3 install requests-html
 Todos
 
 - [ ] Move DB Connection Strings etc to a .env file
+
+
+
+
+**Sources**
+
+ASN Ranges: DB-IP ASN Lite

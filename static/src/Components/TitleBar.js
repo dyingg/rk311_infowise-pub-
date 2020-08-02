@@ -20,12 +20,12 @@ const { BrowserWindow } = electron.remote;
 // Close app
 const theWindow = BrowserWindow.getFocusedWindow();
 
-function TitleBar() {
+function TitleBar({ networkState }) {
   return (
     <div className="title-bar">
       <DingdingOutlined style={{ fontSize: "24px", color: "#ffffff" }} />
       <Title level={4} style={{ color: "#ffffff" }}>
-        InfoWise{" "}
+        InfoWise {networkState == "offline" ? " OFFLINE" : ""}
       </Title>
 
       <div class="actions focus">

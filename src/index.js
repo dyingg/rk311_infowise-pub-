@@ -6,6 +6,23 @@ const thirdPartyAnalysis = require("./main/thirdparty/index");
 const WHOISModule = require("./main/whois/main");
 const reportgen = require("./htmlreport");
 
+const Report = require("./reports.js");
+
+const Store = require("electron-store");
+
+const store = new Store({
+  defaults: {
+    settings: {
+      offline: false,
+      databaseSaved: false,
+    },
+  },
+});
+
+const { time } = require("console");
+
+const reportServer = `localhost`;
+
 mongoose.connect(
   "mongodb+srv://admin:anubhavsaha@proxyvpn.lhltg.gcp.mongodb.net/test",
   {
@@ -39,9 +56,9 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  // mainWindow.loadURL("http://localhost:3000");
+  mainWindow.loadURL("http://localhost:3000");
 
-  mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
+  // mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 };
@@ -99,11 +116,28 @@ ipcMain.on("batchProcess", async (event, file) => {
   event.sender.send("updateBatchState", batchData);
   ips.forEach(async (ip) => {
     let result = await WHOISModule(ip);
+    const timestamp = String(new Date());
+    let logToSave = result;
+    logToSave.timestamp = timestamp;
+    logToSave.ip = ip;
+    let logJson = JSON.stringify(logToSave);
+
+    let ipReport = new Report({
+      ip,
+      log: logJson,
+      timestamp,
+    });
+
+    let savedIPReport = await ipReport.save();
+
+    result.reportId = savedIPReport._id.toString();
+
     if (result) {
       if (result.value > 50) {
         batchData[ip] = {
           status: 2,
           ip,
+          reportId: savedIPReport._id.toString(),
           fullResult: result,
           result: result.value,
         };
@@ -111,6 +145,7 @@ ipcMain.on("batchProcess", async (event, file) => {
         batchData[ip] = {
           status: 1,
           ip,
+          reportId: savedIPReport._id.toString(),
           fullResult: result,
           result: result.value,
         };
@@ -121,17 +156,38 @@ ipcMain.on("batchProcess", async (event, file) => {
   });
 });
 
-ipcMain.on("render-report", (e, ip) => {
-  let result = batchData[ip].fullResult;
-  result.ip = ip;
-  let json = JSON.stringify(result);
-  fs.writeFile(
-    path.resolve(__dirname, "..", "reports", `./${ip}.json`),
-    json,
-    () => {}
-  );
-  reportgen(result);
+ipcMain.on("getRecent", async (e) => {
+  let res = await Report.find({}, "_id ip timestamp", {
+    sort: { created_at: -1 },
+  })
+    .limit(10)
+    .lean();
+
+  e.sender.send("updateRecent", res);
 });
+/**
+ * Rendering the report for users
+ */
+
+ipcMain.on("render-report", (e, id) => {
+  // const timestamp = String(new Date());
+  // let result = batchData[ip].fullResult;
+  // result.timestamp = timestamp;
+  // result.ip = ip;
+  // let json = JSON.stringify(result);
+  // fs.writeFile(
+  //   path.resolve(__dirname, "..", "reports", `./${ip}.json`),
+  //   json,
+  //   () => {}
+  // );
+  // reportgen(result);
+  console.log(id);
+  require("electron").shell.openExternal(`http://${reportServer}/report/${id}`);
+});
+
+/***
+ * Offline handling
+ */
 
 app.on("activate", () => {
   // On OS X it's common to re-create a window in the app when the

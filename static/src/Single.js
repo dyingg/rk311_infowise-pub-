@@ -120,7 +120,7 @@ function Single() {
             <TabPane tab="WHOIS Analysis" key="1">
               <WHOIS data={whoisData} />
             </TabPane>
-            <TabPane tab="Third Party Analysis" key="2">
+            <TabPane tab="Live Sources" key="2">
               <ThirdParty data={thirdPartData} />
             </TabPane>
           </Tabs>

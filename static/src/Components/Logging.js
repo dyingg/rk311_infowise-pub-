@@ -1,31 +1,25 @@
 import React from "react";
+
 import { Table, Tag, Space, Button } from "antd";
+
 const electron = window.require("electron");
 const ipcRenderer = electron.ipcRenderer;
-
 const columns = [
   {
     title: "IP",
     dataIndex: "ip",
-    key: "name",
+    key: "ip",
     render: (text) => <a>{text}</a>,
   },
   {
-    title: "Score",
-    dataIndex: "result",
-    key: "result",
-    render: (tag) => {
-      let color = "green";
-      if (tag > 55) {
-        color = "volcano";
-      }
-      return <Tag color={color}>{tag}</Tag>;
-    },
+    title: "Time Stamp",
+    dataIndex: "timestamp",
+    key: "timestamp",
   },
   {
     title: "Action",
-    key: "reportId",
-    dataIndex: "reportId",
+    key: "_id",
+    dataIndex: "_id",
     render: (tag) => {
       return (
         <Button
@@ -47,7 +41,7 @@ function WHOISData({ data }) {
       <Table
         columns={columns}
         dataSource={data}
-        pagination={false}
+        pagination={true}
         scroll={{ y: "350px" }}
       />{" "}
     </div>

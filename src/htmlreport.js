@@ -51,6 +51,7 @@ function renderLog(report) {
   let color = get_color(report.value);
 
   let AIReport = generate_block(report.table);
+
   report.color = color;
   report.AIReport = AIReport;
   let content = ejs.render(templateRaw, report, {
@@ -62,6 +63,11 @@ function renderLog(report) {
     path.resolve(__dirname, "..", "reports", `./${report.ip}.html`),
     content
   );
+
+  require("electron").shell.openExternal(
+    `file://${path.resolve(__dirname, "..", "reports", `./${report.ip}.html`)}`
+  );
+
   pdf
     .create(content, options)
     .toFile(
