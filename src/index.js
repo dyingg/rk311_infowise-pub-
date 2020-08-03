@@ -21,7 +21,7 @@ const store = new Store({
 
 const { time } = require("console");
 
-const reportServer = `localhost`;
+const reportServer = `35.239.216.228`;
 
 mongoose.connect(
   "mongodb+srv://admin:anubhavsaha@proxyvpn.lhltg.gcp.mongodb.net/test",
@@ -56,9 +56,10 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL("http://localhost:3000");
 
-  // mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
+  // mainWindow.loadURL("http://localhost:3000");
+
+  mainWindow.loadURL(`file://${__dirname}/frontend/index.html`);
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 };

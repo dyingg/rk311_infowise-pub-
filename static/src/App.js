@@ -58,7 +58,7 @@ function App() {
               <Menu.Item key="5">Search</Menu.Item>
               <Menu.Item key="6">History</Menu.Item>
             </SubMenu>
-            <SubMenu
+            {/* <SubMenu
               key="sub4"
               title={
                 <span>
@@ -70,6 +70,7 @@ function App() {
               <Menu.Item key="9">Cloud</Menu.Item>
               <Menu.Item key="10">Module Preferences</Menu.Item>
             </SubMenu>
+         */}
           </Menu>
         </Sider>
         <Content>

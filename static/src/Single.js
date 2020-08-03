@@ -117,10 +117,10 @@ function Single() {
         <div className="toplog"></div>
         <div className="info">
           <Tabs defaultActiveKey="1" onChange={callback}>
-            <TabPane tab="WHOIS Analysis" key="1">
+            <TabPane tab="Analysis" key="1">
               <WHOIS data={whoisData} />
             </TabPane>
-            <TabPane tab="Live Sources" key="2">
+            <TabPane tab="Other Sources" key="2">
               <ThirdParty data={thirdPartData} />
             </TabPane>
           </Tabs>
