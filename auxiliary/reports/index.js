@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+
+const basicAuth = require("express-basic-auth");
+
 mongoose.connect(
   "mongodb+srv://admin:anubhavsaha@proxyvpn.lhltg.gcp.mongodb.net/test",
   {
@@ -15,6 +18,13 @@ mongoose.connect(
 );
 
 const Report = require("./models/reports");
+
+app.use(
+  basicAuth({
+    users: { admin: "infowise" },
+    challenge: true,
+  })
+);
 
 app.set("view engine", "ejs");
 
