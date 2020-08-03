@@ -48,4 +48,32 @@ Todos
 
 **Sources**
 
-ASN Ranges: DB-IP ASN Lite
+- ASN Ranges: DB-IP ASN Lite
+- IPStack GeoIp
+- AL Blacklist
+
+- Anti-Attacks BL
+- AntiSpam_by_CleanTalk
+- blacklists.co
+- BlockList_de
+- Botvrij.eu
+- Brute Force Blocker
+- bytefarm
+- CI Army List
+- CruzIT Blocklist
+- Feodo Tracker
+- FSpamlist
+- GPF DNS Blocklist
+- Green Snow Blocklist
+- ISX.fr DNSBL
+- Lashback UBL
+- Malc0de
+- Myip.ms Blacklist
+- pfBlocker NG
+- Reuteras Scanning List
+- Sblam
+- SSL Blacklist
+- Stop Forum Spam
+- TalosIntel IP Filter
+- Threat Sourcing
+- Turris Greylist
