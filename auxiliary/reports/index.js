@@ -38,6 +38,14 @@ function get_color(score) {
   }
 }
 
+function generate_contact(params) {
+  let content = ``;
+  for (let item of params) {
+    content += `<p>${item[0]} : ${item[1]} </p>`;
+  }
+  return content;
+}
+
 function generate_block(params) {
   let content = ``;
   for (let item of params) {
@@ -72,11 +80,12 @@ app.get("/report/:id", async (req, res) => {
 
       console.log(report);
       let color = get_color(report.value);
-
+      let contact = generate_contact(report.contact);
       let AIReport = generate_block(report.table);
 
       report.color = color;
       report.AIReport = AIReport;
+      report.contact = contact;
       res.render("report", report);
     } catch (e) {
       console.log(e);

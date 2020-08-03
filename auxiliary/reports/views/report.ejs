@@ -12,6 +12,13 @@
     <title>BPRD | INFOWISE RK311 Reporting</title>
   </head>
   <body>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+      }
+    </style>
     <div class="container">
       <div class="jumbotron">
         <div class="d-flex justify-content-md-between">
@@ -45,9 +52,13 @@
             </h2>
             
         </div>
+      
+
         <div class="progress">
             <div class="progress-bar  <% color %>" role="progressbar" style="width: <%= value %>%" aria-valuenow="<%= value %>" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+        <br>
+        <div id="map"></div>
         <br>
         <b>Analysis</b>
         <p>
@@ -71,12 +82,26 @@
 
                
         <hr class="my-4" />
-      
+        <%- contact %>
         
       </div>
     </div>
   </body>
-
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = { lat: <%= lat %>, lng: <%= lng %> };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+    
+  </script>
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -92,4 +117,8 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"
   ></script>
+  <script
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRJIw8Yx_TfaA4NWSnDOD75P7UPLu6j-U&callback=initMap"
+></script>
 </html>

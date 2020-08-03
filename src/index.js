@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const thirdPartyAnalysis = require("./main/thirdparty/index");
 const WHOISModule = require("./main/whois/main");
 const reportgen = require("./htmlreport");
+const rp = require("request-promise");
 
 const Report = require("./reports.js");
 
@@ -121,6 +122,23 @@ ipcMain.on("batchProcess", async (event, file) => {
     let logToSave = result;
     logToSave.timestamp = timestamp;
     logToSave.ip = ip;
+    logToSave.lat = "";
+    logToSave.long = "";
+
+    //Ping for ip location lookup
+
+    try {
+      let lookUp = JSON.parse(
+        await rp(
+          `http://api.ipstack.com/${ip}?access_key=4d5452a995257caa48c288dd122cea0a&format=1`
+        )
+      );
+
+      logToSave.lat = lookUp.latitude;
+      logToSave.lng = lookUp.longitude;
+    } catch (e) {
+      console.log(e);
+    }
     let logJson = JSON.stringify(logToSave);
 
     let ipReport = new Report({
