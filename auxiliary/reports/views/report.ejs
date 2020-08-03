@@ -28,17 +28,21 @@
         </div>
         <h1 class="display-4"></h1>
         <center>
-          <b>KP Address</ADDREss></b>
+          <b>IP Address</ADDREss></b>
           <h1><%= ip %></h1>
           <p><%= sig %></p>
         </center>
+
         <p>
-            Risk Score
+          <center>This report was generated using <b>Team Infowise's VPN/Proxy Detector</b> at <u><%= timestamp %></u></center>
+        </p>
+        <p style="font-family:cursive">
+          <h1>Risk Score</h1>
         </p>
         <div class="d-flex">
-            <h1>
-                <%= value %>%
-            </h1>
+            <h2>
+               <%= value %>%
+            </h2>
             
         </div>
         <div class="progress">
@@ -67,9 +71,7 @@
 
                
         <hr class="my-4" />
-        <p>
-          This report was generated using <b>Team Infowise's VPN/Proxy Detector</b> at <%= timestamp %>
-        </p>
+      
         
       </div>
     </div>
