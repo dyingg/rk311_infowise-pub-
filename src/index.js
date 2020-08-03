@@ -157,14 +157,21 @@ ipcMain.on("batchProcess", async (event, file) => {
   });
 });
 
+/**Queries to database for Recent & Search */
+
 ipcMain.on("getRecent", async (e) => {
   console.log("Query for most recent");
 
+  // let res = await Report.find({}, "_id ip timestamp score", {
+  //   sort: { created_at: -1 },
+  // })
+  //   .limit(10)
+  //   .lean();
+
   let res = await Report.find({}, "_id ip timestamp score", {
-    sort: { created_at: -1 },
-  })
-    .limit(10)
-    .lean();
+    limit: 10,
+    sort: { _id: -1 },
+  }).lean();
 
   res = res.map((record) => {
     record.reportId = record._id.toString();
@@ -175,6 +182,24 @@ ipcMain.on("getRecent", async (e) => {
 
   e.sender.send("updateRecent", res);
 });
+
+ipcMain.on("getSearch", async (e, ip) => {
+  console.log("Search for most recent");
+
+  let res = await Report.find({ ip }, "_id ip timestamp score", {
+    sort: { _id: -1 },
+  }).lean();
+
+  res = res.map((record) => {
+    record.reportId = record._id.toString();
+    return record;
+  });
+
+  console.log(res);
+
+  e.sender.send("updateSearch", res);
+});
+
 /**
  * Rendering the report for users
  */

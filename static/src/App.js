@@ -54,9 +54,9 @@ function App() {
                 <Menu.Item key="3">Batch Test</Menu.Item>
               </Menu.ItemGroup>
             </SubMenu>
-            <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Logging">
+            <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Reports">
               <Menu.Item key="5">Search</Menu.Item>
-              <Menu.Item key="6">Recent</Menu.Item>
+              <Menu.Item key="6">History</Menu.Item>
             </SubMenu>
             <SubMenu
               key="sub4"

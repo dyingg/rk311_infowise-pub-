@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 
@@ -7,7 +7,7 @@ import ThirdParty from "./Components/ThirdParty";
 import WHOIS from "./Components/WHOIS";
 import { Input, Typography, Tabs, Card } from "antd";
 import { Button, Tooltip } from "antd";
-import { ProfileOutlined } from "@ant-design/icons";
+import Icon, { ProfileOutlined } from "@ant-design/icons";
 import { Progress } from "antd";
 
 import Logging from "./Components/Logging";
@@ -27,6 +27,18 @@ function LogSearch() {
     console.log(key);
   }
 
+  let [data, updateDate] = useState([]);
+
+  useEffect(() => {
+    ipcRenderer.on("updateSearch", (e, res) => {
+      updateDate(res);
+    });
+
+    return function cleanup() {
+      ipcRenderer.removeAllListeners("updateSearch");
+    };
+  }, []);
+
   return (
     <div>
       <div className="App">
@@ -37,12 +49,14 @@ function LogSearch() {
           <Search
             placeholder="127.0.0.1"
             enterButton
-            onSearch={(value) => {}}
+            onSearch={(value) => {
+              ipcRenderer.send("getSearch", value);
+            }}
           />
         </div>
         <br />
         <div className="log-info">
-          <Logging />
+          <Logging dataSource={data} />
         </div>
         {/* RESULT DISPLAY */}
       </div>
