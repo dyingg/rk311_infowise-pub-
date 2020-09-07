@@ -105,7 +105,8 @@ ipcMain.on("batchProcess", async (event, file) => {
 
   let ipFile = fs.readFileSync(batchFile, "utf-8");
 
-  let ips = ipFile.split("\r\n");
+  let ips = ipFile.split("\n");
+  ips.map((k) => k.trim());
 
   ips.forEach((ip) => {
     batchData[ip] = {
